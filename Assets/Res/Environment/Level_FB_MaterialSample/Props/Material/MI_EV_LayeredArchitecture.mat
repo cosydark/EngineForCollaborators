@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9129664696933618471
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 13
+  hdPluginSubTargetMaterialVersions:
+    m_Keys: []
+    m_Values: 
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MI_EV_LayeredArchitecture
+  m_Shader: {fileID: -6465566751694194690, guid: c2c63345f8449b64a8aa09ada43a8a58, type: 3}
+  m_Parent: {fileID: 2100000, guid: c9633154d20b111428ad5b6233cfa1ee, type: 2}
+  m_ModifiedSerializedProperties: 16
+  m_ValidKeywords:
+  - _DECALLAYER_LAYER1
+  - _DISABLE_DECALS
+  - _DISABLE_SSR_TRANSPARENT
+  - _ENUM_LAYERCOUNT_TILING
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2000
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - TransparentDepthPrepass
+  - TransparentDepthPostpass
+  - TransparentBackface
+  - MOTIONVECTORS
+  - RayTracingPrepass
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseLayer_BaseMap:
+        m_Texture: {fileID: 2800000, guid: 0dd450ec30c61434babca7f52170d8a4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseLayer_MaskMap:
+        m_Texture: {fileID: 2800000, guid: 1c12489597d85074199f37319f62dea9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseLayer_NormalMap:
+        m_Texture: {fileID: 2800000, guid: fea04797d0d31bc408d3f6387b054c77, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_BaseMap:
+        m_Texture: {fileID: 2800000, guid: d2b13dde6e9b7064faa66fff5fe18183, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_G_BaseMap:
+        m_Texture: {fileID: 2800000, guid: 62c88e1fe3089824a9a0569a6c045ed2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_G_MaskMap:
+        m_Texture: {fileID: 2800000, guid: 352a926aa99c6bd49b155ff0528073ac, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_G_NormalMap:
+        m_Texture: {fileID: 2800000, guid: f64cf73accb3eb244b738e9e26d94fbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_MaskMap:
+        m_Texture: {fileID: 2800000, guid: e65d74bcc6283bf4fad55d1c53c6b8f7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_NormalMap:
+        m_Texture: {fileID: 2800000, guid: 3fa2b350ea0b2da4287439293600b6d8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_R_BaseMap:
+        m_Texture: {fileID: 2800000, guid: c5bf5f4d164537f45a88e1574fa10233, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_R_MaskMap:
+        m_Texture: {fileID: 2800000, guid: 7aa638d24a7c6a84ca74998d86f678da, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_R_NormalMap:
+        m_Texture: {fileID: 2800000, guid: 4ca8e86d847bb534595ba0f595373be4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Metallic: 1
+    - _ReceivesSSR: 1
+    - _Roughness: 0.7
+    - _StencilRefDepth: 8
+    - _StencilRefGBuffer: 10
+    - _StencilRefMV: 40
+    - _TilingLayer_MatchScaling: 1
+    - _TilingLayer_Tiling: 3
+    m_Colors: []
+  m_BuildTextureStacks: []

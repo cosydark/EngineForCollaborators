@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bf55d4aa65487514fb234566397fda52, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bf55d4aa65487514fb234566397fda52, type: 3}
       propertyPath: m_LocalPosition.z
@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bf55d4aa65487514fb234566397fda52, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bf55d4aa65487514fb234566397fda52, type: 3}
       propertyPath: m_LocalRotation.z
@@ -48,9 +48,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: bf55d4aa65487514fb234566397fda52, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 48c0605b042583c47979296200144bc6, type: 2}
+    - target: {fileID: -7511558181221131132, guid: bf55d4aa65487514fb234566397fda52, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 299c963d8fb8a4a4c8dc46bf57f53276, type: 2}
+    - target: {fileID: -7511558181221131132, guid: bf55d4aa65487514fb234566397fda52, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: d70c90203e230bf448c059c62ea99464, type: 2}
+    - target: {fileID: -7511558181221131132, guid: bf55d4aa65487514fb234566397fda52, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: fdd1ea0f7425998488f9fd82b87f4520, type: 2}
+    - target: {fileID: -7511558181221131132, guid: bf55d4aa65487514fb234566397fda52, type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: c364230d8725af049916561cca91c653, type: 2}
     - target: {fileID: 919132149155446097, guid: bf55d4aa65487514fb234566397fda52, type: 3}
       propertyPath: m_Name
-      value: SM_Props_ColorCalibrator_001_A
+      value: Prefab_Props_ColorCalibrator_001_A
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

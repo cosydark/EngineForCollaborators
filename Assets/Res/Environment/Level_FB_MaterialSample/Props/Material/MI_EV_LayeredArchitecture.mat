@@ -31,7 +31,7 @@ Material:
   - _DECALLAYER_LAYER1
   - _DISABLE_DECALS
   - _DISABLE_SSR_TRANSPARENT
-  - _ENUM_LAYERCOUNT_TILING
+  - _ENUM_LAYERCOUNT_TILINGRG
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -74,7 +74,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TilingLayer_BaseMap:
-        m_Texture: {fileID: 2800000, guid: d2b13dde6e9b7064faa66fff5fe18183, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0dd450ec30c61434babca7f52170d8a4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TilingLayer_G_BaseMap:
@@ -90,11 +90,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TilingLayer_MaskMap:
-        m_Texture: {fileID: 2800000, guid: e65d74bcc6283bf4fad55d1c53c6b8f7, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1c12489597d85074199f37319f62dea9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TilingLayer_NormalMap:
-        m_Texture: {fileID: 2800000, guid: 3fa2b350ea0b2da4287439293600b6d8, type: 3}
+        m_Texture: {fileID: 2800000, guid: fea04797d0d31bc408d3f6387b054c77, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TilingLayer_R_BaseMap:
@@ -111,13 +111,41 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _CustomEnum: 2
+    - _CustomOption0: 1
+    - _CustomOption1: 1
+    - _CustomOption2: 1
+    - _DecalLayer: 0
+    - _ENUM_LAYERCOUNT: 2
     - _Metallic: 1
     - _ReceivesSSR: 1
     - _Roughness: 0.7
     - _StencilRefDepth: 8
     - _StencilRefGBuffer: 10
     - _StencilRefMV: 40
+    - _SupportDecals: 0
+    - _TilingLayer_G_BlendMode: 1
+    - _TilingLayer_G_BlendRadius: 0.05
+    - _TilingLayer_G_HeightOffset: -0.154
+    - _TilingLayer_G_HexTiling: 0
+    - _TilingLayer_G_MaskContrast: 0.66
+    - _TilingLayer_G_MaskIntensity: 1
+    - _TilingLayer_G_MatchScaling: 1
+    - _TilingLayer_G_NormalScale: 1.5
+    - _TilingLayer_G_Porosity: 0
+    - _TilingLayer_G_Reflectance: 0.5
+    - _TilingLayer_G_Tiling: 3.049071
+    - _TilingLayer_G_Use2U: 0
     - _TilingLayer_MatchScaling: 1
-    - _TilingLayer_Tiling: 3
-    m_Colors: []
+    - _TilingLayer_R_BlendMode: 1
+    - _TilingLayer_R_BlendRadius: 0.007
+    - _TilingLayer_R_HeightOffset: -0.02
+    - _TilingLayer_R_MaskIntensity: 1
+    - _TilingLayer_R_MatchScaling: 1
+    - _TilingLayer_R_Porosity: 0
+    - _TilingLayer_R_Tiling: 3.049071
+    - _TilingLayer_Tiling: 3.049071
+    - _TilingLayer_Use2U: 0
+    m_Colors:
+    - _TilingLayer_G_BaseColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

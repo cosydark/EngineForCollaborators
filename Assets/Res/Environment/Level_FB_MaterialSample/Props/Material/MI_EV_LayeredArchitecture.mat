@@ -114,8 +114,8 @@ Material:
     - _CustomEnum: 2
     - _CustomOption0: 1
     - _CustomOption1: 1
-    - _CustomOption2: 1
-    - _DecalLayer: 0
+    - _CustomOption2: 0
+    - _DecalLayer: 1
     - _ENUM_LAYERCOUNT: 2
     - _Metallic: 1
     - _ReceivesSSR: 1
@@ -125,7 +125,7 @@ Material:
     - _StencilRefMV: 40
     - _SupportDecals: 0
     - _TilingLayer_G_BlendMode: 1
-    - _TilingLayer_G_BlendRadius: 0.05
+    - _TilingLayer_G_BlendRadius: 0.01
     - _TilingLayer_G_HeightOffset: -0.154
     - _TilingLayer_G_HexTiling: 0
     - _TilingLayer_G_MaskContrast: 0.66

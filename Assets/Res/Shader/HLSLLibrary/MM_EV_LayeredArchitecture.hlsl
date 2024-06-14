@@ -274,6 +274,7 @@ void Baselayered_float( bool USEBASELAYER,
     {
         float4 MaskMap = SAMPLE_TEXTURE2D(_BaseLayer_MaskMap.tex, SamplerLinearRepeat, BaseCoordinate);
         float4 NormalMap = SAMPLE_TEXTURE2D(_BaseLayer_NormalMap.tex, SamplerLinearRepeat, BaseCoordinate);
+        NormalMap.g = 1 - NormalMap.g;
         float3 NormalTS = GetNormalTSFromNormalTex(NormalMap, _BaseLayer_NormalScale);
         MInput.TangentSpaceNormal_NormalTS = BlendAngelCorrectedNormals(NormalTS, MInput.TangentSpaceNormal_NormalTS);
         MInput.AO_AmbientOcclusion *= GetMaterialAOFromMaskMap(MaskMap);

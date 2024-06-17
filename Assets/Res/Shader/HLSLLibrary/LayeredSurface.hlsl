@@ -3,10 +3,7 @@
 #ifndef XRENDER_RES_LAYERED_SURFACE_HLSL_INCLUDED
 #define XRENDER_RES_LAYERED_SURFACE_HLSL_INCLUDED
 
-// #include "Packages/com.funplus.xrender/Shaders/Library/CommonSampler.hlsl"
-// #include "Packages/com.funplus.xrender/Shaders/Library/CommonMaterial.hlsl"
 #include "CommonAntiTilling.hlsl"
-#include "./MM_EV_LayeredArchitecture.Header.hlsl"
 
 struct MaterialLayer
 {

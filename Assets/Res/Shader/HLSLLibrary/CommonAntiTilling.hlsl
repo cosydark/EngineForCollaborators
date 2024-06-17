@@ -127,6 +127,69 @@ float4 SampleTexture2DHex(      Texture2D Map,
     return Weights.x * V1 + Weights.y * V2 + Weights.z * V3;
 }
 
+float3 Transform_RowMajor(float3x3 Mat, float3 Vec)
+{
+    return mul(Vec, Mat);
+}
+
+float3 TransformVectorTSToVectorWS_RowMajor(float3 VecTS, float3x3 TangentToWorldMatrix, bool DoNormalize = false)
+{
+    float3 V = Transform_RowMajor(TangentToWorldMatrix, VecTS);
+    if (DoNormalize)
+    {
+        return SafeNormalize(V);
+    }
+
+    return V;
+}
+
+// material input struct
+struct FSlabParams_MInput
+{
+    // Always needed
+    // AO;
+    float AO_AmbientOcclusion;
+    
+    // FSlabParams_CustomTBN CustomTBN;
+    // FSlabParams_TangentMap TangentMap;
+    // FSlabParams_TangentSpaceNormal TangentSpaceNormal;
+    float3 TangentSpaceNormal_NormalTS;
+    // FSlabParams_Decal Decal;
+    // FSlabParams_PluginChannelData PluginChannelData;
+    // FSlabParams_TerrainBlend TerrainBlend;
+    // Base;
+    float3 Base_Color;
+    // float Base_Opacity;
+    float Base_Metallic;
+    float Base_Roughness;
+    
+    // FSlabParams_Generic Generic;
+    // FSlabParams_Geometry Geometry;
+    
+    // Specular;
+    float Specular_Reflectance;
+    
+    // Slab feature params
+    // FSlabParams_Emission Emission;
+
+    // Material feature params
+    // Detail;
+    float Detail_Height;
+    
+    // Material feature & slab feature params
+
+    // ================================================================================
+    // // just for debug
+    // #if defined(USE_DEBUG_MODE) || defined(_USE_DEBUG_MODE_DEFERRED)
+    // FSlabParams_DecalDebug  DecalDebug;
+    // FDebugCustomData        DebugCustomData;
+    // #endif
+    // ================================================================================
+
+};
+
+#define MInputType FSlabParams_MInput
+
 #define SAMPLE_TEXTURE2D_HEX(textureName, samplerName, coord2) SampleTexture2DHex(textureName, samplerName, coord2)
 
 #endif // XRENDER_COMMON_ANTI_TILLING_HLSL

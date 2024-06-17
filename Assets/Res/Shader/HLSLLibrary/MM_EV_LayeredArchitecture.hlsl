@@ -1,4 +1,4 @@
-#include <UnityShaderVariables.cginc>
+// #include <UnityShaderVariables.cginc>
 #ifndef MM_EV_LAYEREDARCHITECTURE
 #define MM_EV_LAYEREDARCHITECTURE
 

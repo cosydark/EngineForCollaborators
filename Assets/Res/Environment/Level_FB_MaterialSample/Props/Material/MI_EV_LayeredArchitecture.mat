@@ -28,7 +28,7 @@ Material:
   m_Parent: {fileID: 2100000, guid: c9633154d20b111428ad5b6233cfa1ee, type: 2}
   m_ModifiedSerializedProperties: 16
   m_ValidKeywords:
-  - _DECALLAYER_LAYER1
+  - _DECALLAYER_LAYER7
   - _DISABLE_DECALS
   - _DISABLE_SSR_TRANSPARENT
   - _ENUM_LAYERCOUNT_TILINGRG
@@ -114,7 +114,8 @@ Material:
     - _CustomEnum: 2
     - _CustomOption0: 1
     - _CustomOption1: 1
-    - _CustomOption2: 0
+    - _CustomOption2: 1
+    - _DECALLAYER: 6
     - _DecalLayer: 1
     - _ENUM_LAYERCOUNT: 2
     - _Metallic: 1
@@ -147,5 +148,6 @@ Material:
     - _TilingLayer_Tiling: 3.049071
     - _TilingLayer_Use2U: 0
     m_Colors:
+    - _TilingLayer_BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _TilingLayer_G_BaseColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

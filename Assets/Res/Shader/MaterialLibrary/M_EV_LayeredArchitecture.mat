@@ -8,16 +8,16 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: M_EV_LayeredArchitecture
-  m_Shader: {fileID: -6465566751694194690, guid: c2c63345f8449b64a8aa09ada43a8a58, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 62dbe28584764f949ba804ece97381e8, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _DECALLAYER_LAYER1
   - _DISABLE_DECALS
   - _DISABLE_SSR
   - _DISABLE_SSR_TRANSPARENT
   - _ENUM_LAYERCOUNT_TILING
   m_InvalidKeywords:
+  - _DECALLAYER_LAYER1
   - _DECALLAYER__DECALLAYER
   - _ENUM_A
   - _NORMALMAP_TANGENT_SPACE
@@ -161,11 +161,35 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _TilingLayer_G_BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_G_MaskMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_G_NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _TilingLayer_MaskMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TilingLayer_NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_R_BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_R_MaskMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_R_NormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -320,10 +344,38 @@ Material:
     - _ThinFilmFactor: 1
     - _ThinFilmThickness: 0.27
     - _ThinFilm_Layer: 0
+    - _TilingLayer_G_BlendMode: 1
+    - _TilingLayer_G_BlendRadius: 0.1
+    - _TilingLayer_G_HeightOffset: 0
+    - _TilingLayer_G_HexTiling: 0
+    - _TilingLayer_G_MaskContrast: 1
+    - _TilingLayer_G_MaskIntensity: 1
+    - _TilingLayer_G_MatchScaling: 0
+    - _TilingLayer_G_NormalScale: 1
+    - _TilingLayer_G_Porosity: 0
+    - _TilingLayer_G_Reflectance: 0.5
+    - _TilingLayer_G_Tiling: 1
+    - _TilingLayer_G_Use2U: 0
     - _TilingLayer_HeightOffset: 0
+    - _TilingLayer_HexTiling: 0
+    - _TilingLayer_MatchScaling: 1
     - _TilingLayer_NormalScale: 1
     - _TilingLayer_Porosity: 0
+    - _TilingLayer_R_BlendMode: 1
+    - _TilingLayer_R_BlendRadius: 0.1
+    - _TilingLayer_R_HeightOffset: 0
+    - _TilingLayer_R_HexTiling: 0
+    - _TilingLayer_R_MaskContrast: 1
+    - _TilingLayer_R_MaskIntensity: 1
+    - _TilingLayer_R_MatchScaling: 0
+    - _TilingLayer_R_NormalScale: 1
+    - _TilingLayer_R_Porosity: 0
+    - _TilingLayer_R_Reflectance: 0.5
+    - _TilingLayer_R_Tiling: 1
+    - _TilingLayer_R_Use2U: 0
     - _TilingLayer_Reflectance: 0.5
+    - _TilingLayer_Tiling: 1
+    - _TilingLayer_Use2U: 0
     - _TransmissionEnable: 1
     - _TransmissionMask: 1
     - _TransparentBackfaceEnable: 0
@@ -357,6 +409,8 @@ Material:
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _TilingLayer_BaseColor: {r: 1, g: 1, b: 1, a: 0}
+    - _TilingLayer_G_BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TilingLayer_R_BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _TransmittanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}

@@ -12,8 +12,6 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _DISABLE_DECALS
-  - _DISABLE_SSR
   - _DISABLE_SSR_TRANSPARENT
   - _ENUM_LAYERCOUNT_TILING
   m_InvalidKeywords:
@@ -24,7 +22,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: 2225
   stringTagMap:
     MotionVector: User
   disabledShaderPasses:
@@ -33,7 +31,9 @@ Material:
   - TransparentBackface
   - RayTracingPrepass
   - MOTIONVECTORS
-  m_LockedProperties: 
+  m_LockedProperties: :m_LightmapFlags :m_EnableInstancingVariants :m_CustomRenderQueue
+    _AddPrecomputedVelocity _DoubleSidedEnable _DoubleSidedGIMode _OpaqueCullMode
+    _RayTracing _ReceivesSSR _SupportDecals _SurfaceType
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -310,7 +310,7 @@ Material:
     - _PPDPrimitiveLength: 1
     - _PPDPrimitiveWidth: 1
     - _RayTracing: 0
-    - _ReceivesSSR: 0
+    - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0
     - _Reflectance: 0.5
     - _RefractionModel: 0
@@ -325,10 +325,10 @@ Material:
     - _SpecularOcclusionMode: 1
     - _SrcBlend: 1
     - _StencilRef: 0
-    - _StencilRefDepth: 0
+    - _StencilRefDepth: 8
     - _StencilRefDistortionVec: 4
-    - _StencilRefGBuffer: 2
-    - _StencilRefMV: 32
+    - _StencilRefGBuffer: 10
+    - _StencilRefMV: 40
     - _StencilWriteMask: 6
     - _StencilWriteMaskDepth: 9
     - _StencilWriteMaskDistortionVec: 4
@@ -336,7 +336,7 @@ Material:
     - _StencilWriteMaskMV: 41
     - _SubsurfaceMask: 1
     - _SupportDecal: 1
-    - _SupportDecals: 0
+    - _SupportDecals: 1
     - _SurfaceType: 0
     - _TexWorldScale: 1
     - _TexWorldScaleEmissive: 1

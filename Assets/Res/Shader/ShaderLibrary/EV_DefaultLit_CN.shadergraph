@@ -827,7 +827,7 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.CategoryData",
     "m_ObjectId": "213b5afdf0d2465cb03d2aa74be8af44",
-    "m_Name": "Base Layer",
+    "m_Name": "▶ Base Layer ◀",
     "m_ChildObjectList": [
         {
             "m_Id": "5538f825f14f466dbf7a7787e905c876"
@@ -1567,10 +1567,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -712.0,
-            "y": 176.00001525878907,
-            "width": 127.0,
-            "height": 33.999969482421878
+            "x": -700.6666259765625,
+            "y": 174.0,
+            "width": 92.6666259765625,
+            "height": 35.99998474121094
         }
     },
     "m_Slots": [
@@ -1743,7 +1743,7 @@
     "m_SlotType": 0,
     "m_Hidden": false,
     "m_ShaderOutputName": "_Occlusion",
-    "m_StageCapability": 2,
+    "m_StageCapability": 3,
     "m_Value": 1.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
@@ -1761,10 +1761,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -701.0,
-            "y": 142.00001525878907,
-            "width": 116.0,
-            "height": 34.0
+            "x": -722.6666259765625,
+            "y": 141.99998474121095,
+            "width": 110.0,
+            "height": 36.00001525878906
         }
     },
     "m_Slots": [
@@ -1789,7 +1789,7 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.CategoryData",
     "m_ObjectId": "901de48534a446809e94072365156eaa",
-    "m_Name": "Emissive Layer",
+    "m_Name": "▶ Emissive Layer ◀",
     "m_ChildObjectList": [
         {
             "m_Id": "c33b9a8e32534142a32c5ab7f4e3a5c2"
@@ -1809,7 +1809,7 @@
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "AmbientOcclusion",
-    "m_StageCapability": 2,
+    "m_StageCapability": 3,
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
@@ -1920,7 +1920,7 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.CategoryData",
     "m_ObjectId": "a9766b9e75e94d589c6729d7dd76f1ef",
-    "m_Name": "PBR Layer",
+    "m_Name": "▶ PBR Layer ◀",
     "m_ChildObjectList": [
         {
             "m_Id": "d502f14254ad472fb45a3e8344a42301"
@@ -2857,10 +2857,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -767.0,
-            "y": 107.99999237060547,
-            "width": 182.0,
-            "height": 34.000022888183597
+            "x": -896.6665649414063,
+            "y": 105.99999237060547,
+            "width": 291.33331298828127,
+            "height": 36.00000762939453
         }
     },
     "m_Slots": [

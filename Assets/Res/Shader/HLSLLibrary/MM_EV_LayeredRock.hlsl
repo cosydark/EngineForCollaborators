@@ -359,6 +359,7 @@ void BaseToppinglayered_float( bool TOPPING,
                         float _ToppingLayer_Coverage,
                         float _ToppingLayer_Spread,
                         float _ToppingLayer_HexTiling,
+                        float _ToppingLayer_UseHeightLerp,
                         float _ToppingLayer_BlendMode,
                         float _ToppingLayer_BlendRadius,
                         float3x3 PixelIn_TangentToWorldMatrix,
@@ -427,11 +428,25 @@ void BaseToppinglayered_float( bool TOPPING,
                             );
         if(_ToppingLayer_HexTiling > FLT_EPS)
         {
-            BlendWithHeight_Hex(MLayer_Detail, ToppingCoordinates, Coverage, _ToppingLayer_BlendRadius, _ToppingLayer_BlendMode, MInput);
+            if(_ToppingLayer_UseHeightLerp > FLT_EPS)
+            {
+                BlendWithHeight_Hex(MLayer_Detail, ToppingCoordinates, Coverage, _ToppingLayer_BlendRadius, _ToppingLayer_BlendMode, MInput);
+            }
+            else
+            {
+                BlendWithOutHeight_Hex(MLayer_Detail, ToppingCoordinates, Coverage, MInput);
+            }
         }
         else
         {
-            BlendWithHeight(MLayer_Detail, ToppingCoordinates, Coverage, _ToppingLayer_BlendRadius, _ToppingLayer_BlendMode, MInput);
+            if(_ToppingLayer_UseHeightLerp > FLT_EPS)
+            {
+                BlendWithHeight(MLayer_Detail, ToppingCoordinates, Coverage, _ToppingLayer_BlendRadius, _ToppingLayer_BlendMode, MInput);
+            }
+            else
+            {
+                BlendWithOutHeight(MLayer_Detail, ToppingCoordinates, Coverage, MInput);
+            }
         }
         
     }

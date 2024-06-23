@@ -24,15 +24,14 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MI_EV_LayeredArchitecture
-  m_Shader: {fileID: -6465566751694194690, guid: c2c63345f8449b64a8aa09ada43a8a58, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 62dbe28584764f949ba804ece97381e8, type: 3}
   m_Parent: {fileID: 2100000, guid: c9633154d20b111428ad5b6233cfa1ee, type: 2}
   m_ModifiedSerializedProperties: 16
   m_ValidKeywords:
-  - _DECALLAYER_LAYER7
-  - _DISABLE_DECALS
   - _DISABLE_SSR_TRANSPARENT
   - _ENUM_LAYERCOUNT_TILINGRG
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _DECALLAYER_LAYER7
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -114,7 +113,7 @@ Material:
     - _CustomEnum: 2
     - _CustomOption0: 1
     - _CustomOption1: 1
-    - _CustomOption2: 1
+    - _CustomOption2: 0
     - _DECALLAYER: 6
     - _DecalLayer: 1
     - _ENUM_LAYERCOUNT: 2

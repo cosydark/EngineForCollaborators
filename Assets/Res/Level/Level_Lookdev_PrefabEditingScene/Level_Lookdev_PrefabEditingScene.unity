@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 14360986}
   m_Layer: 0
-  m_Name: TEST_01 (11)
+  m_Name: Default Lit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,12 +148,11 @@ Transform:
   m_GameObject: {fileID: 14360985}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9, y: 0, z: 3}
+  m_LocalPosition: {x: 6, y: 0, z: 9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 782225287}
-  - {fileID: 1349003246}
   - {fileID: 1931778847}
   m_Father: {fileID: 123155155}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -189,8 +188,8 @@ Transform:
   - {fileID: 393591512}
   - {fileID: 1686588374}
   - {fileID: 1779941878}
-  - {fileID: 467893054}
   - {fileID: 14360986}
+  - {fileID: 467893054}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &286840027
@@ -344,7 +343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 393591512}
   m_Layer: 0
-  m_Name: TEST_01 (3)
+  m_Name: Color Calibrator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -359,7 +358,7 @@ Transform:
   m_GameObject: {fileID: 393591511}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9, y: 0, z: 0}
+  m_LocalPosition: {x: 6, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -377,12 +376,12 @@ GameObject:
   m_Component:
   - component: {fileID: 467893054}
   m_Layer: 0
-  m_Name: TEST_01 (9)
+  m_Name: Decal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &467893054
 Transform:
   m_ObjectHideFlags: 0
@@ -392,7 +391,7 @@ Transform:
   m_GameObject: {fileID: 467893053}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6, y: 0, z: 3}
+  m_LocalPosition: {x: 12, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -469,12 +468,24 @@ PrefabInstance:
       value: Prefab_Props_ColorCalibrator_001_A
       objectReference: {fileID: 0}
     - target: {fileID: 3025254817589062390, guid: 92f0bba967da03647b2c6be157fd122c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025254817589062390, guid: 92f0bba967da03647b2c6be157fd122c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025254817589062390, guid: 92f0bba967da03647b2c6be157fd122c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025254817589062390, guid: 92f0bba967da03647b2c6be157fd122c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3025254817589062390, guid: 92f0bba967da03647b2c6be157fd122c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 1.35
       objectReference: {fileID: 0}
     - target: {fileID: 3025254817589062390, guid: 92f0bba967da03647b2c6be157fd122c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -482,11 +493,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3025254817589062390, guid: 92f0bba967da03647b2c6be157fd122c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.70710784
       objectReference: {fileID: 0}
     - target: {fileID: 3025254817589062390, guid: 92f0bba967da03647b2c6be157fd122c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: -0.70710576
       objectReference: {fileID: 0}
     - target: {fileID: 3025254817589062390, guid: 92f0bba967da03647b2c6be157fd122c, type: 3}
       propertyPath: m_LocalRotation.y
@@ -498,7 +509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3025254817589062390, guid: 92f0bba967da03647b2c6be157fd122c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 3025254817589062390, guid: 92f0bba967da03647b2c6be157fd122c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -507,6 +518,10 @@ PrefabInstance:
     - target: {fileID: 3025254817589062390, guid: 92f0bba967da03647b2c6be157fd122c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025254817589062390, guid: 92f0bba967da03647b2c6be157fd122c, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4157088429587337625, guid: 92f0bba967da03647b2c6be157fd122c, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -609,6 +624,396 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2538704052761837837, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
   m_PrefabInstance: {fileID: 782225286}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &804948007
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: hywhfonts Atlas Material Instance
+  m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - MASK_HARD
+  - RATIOS_OFF
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cube:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissipateDetailTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissipateTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FaceTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 8346977884397242245, guid: d34ff4bc9af35424785ba1393187444a, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OutlineTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Ambient: 0.5
+    - _Bevel: 0.5
+    - _BevelClamp: 0
+    - _BevelOffset: 0
+    - _BevelRoundness: 0
+    - _BevelWidth: 0
+    - _Blend: 0
+    - _BumpFace: 0
+    - _BumpOutline: 0
+    - _CenterGlowIntensity: 0
+    - _CenterGlowPower: 1.2
+    - _ColorMask: 15
+    - _ComplicatedBlendMode: 0
+    - _CullMode: 0
+    - _DetailBlendMode: 0
+    - _DetailTexAngle: 0
+    - _DetailTex_Mode: 0
+    - _DetailTex_SpeedU: 0
+    - _DetailTex_SpeedV: 0
+    - _Detail_Mode: 0
+    - _Diffuse: 0.5
+    - _DissipateAmount: 0.1
+    - _DissipateDetailTex_Mode: 0
+    - _DissipateSliderWidth: 0.05
+    - _DissipateSmooth: 0
+    - _DissipateSpeed_U: 0
+    - _DissipateSpeed_V: 0
+    - _DissipateTexture_Mode: 0
+    - _DissipateUV_Swap: 0
+    - _DissipateU_Mirror: 0
+    - _DissipateV_Mirror: 0
+    - _DisspateDetailTexAngle: 0
+    - _DisspateTexAngle: 0
+    - _DistAngle: 0
+    - _DistForceU: 1
+    - _DistForceV: 1
+    - _DistSpeed_U: 0
+    - _DistSpeed_V: 0
+    - _DistortTex_Mode: 0
+    - _DstBlend: 10
+    - _FaceDilate: 0
+    - _FaceShininess: 0
+    - _FaceUVSpeedX: 0
+    - _FaceUVSpeedY: 0
+    - _GlowInner: 0
+    - _GlowOffset: 0
+    - _GlowOuter: 0.525
+    - _GlowPower: 0.2
+    - _GradientScale: 5
+    - _LightAngle: 3.1416
+    - _Mask2TexAngle: 28
+    - _MaskSoftnessX: 0
+    - _MaskSoftnessY: 0
+    - _MaskTex2Angle: 0
+    - _MaskTex2_Mode: 0
+    - _MaskTex2_SpeedRotate: 0
+    - _MaskTex2_SpeedU: 0
+    - _MaskTex2_SpeedV: 0
+    - _MaskTexAngle: 0
+    - _MaskTex_Mode: 0
+    - _MaskTex_SpeedRotate: 0
+    - _MaskTex_SpeedU: 0
+    - _MaskTex_SpeedV: 0
+    - _OutlineShininess: 0
+    - _OutlineSoftness: 0
+    - _OutlineUVSpeedX: 0
+    - _OutlineUVSpeedY: 0
+    - _OutlineWidth: 0
+    - _PatternDensity: 10
+    - _PatternEdge: 0.01
+    - _PatternScale: 0.7
+    - _PatternSpeedU: 0
+    - _PatternSpeedV: 0
+    - _PerspectiveFilter: 0.875
+    - _Reflectivity: 10
+    - _ScaleRatioA: 1
+    - _ScaleRatioB: 1
+    - _ScaleRatioC: 1
+    - _ScaleX: 1
+    - _ScaleY: 1
+    - _ShaderFlags: 0
+    - _Sharpness: 0
+    - _SpecularPower: 2
+    - _SrcBlend: 1
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _TextureHeight: 4096
+    - _TextureWidth: 4096
+    - _UnderlayDilate: 0
+    - _UnderlayOffsetX: 0.2
+    - _UnderlayOffsetY: -0.2
+    - _UnderlaySoftness: 0.2
+    - _UseComplicatedBlendMode: 0
+    - _VertexOffsetX: 0
+    - _VertexOffsetY: 0
+    - _WeightBold: 0.75
+    - _WeightNormal: 0
+    m_Colors:
+    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _DetailColor: {r: 1, g: 1, b: 1, a: 1}
+    - _DetailTex_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _DissipateColor: {r: 1, g: 1, b: 0, a: 1}
+    - _DissipateRGBA: {r: 1, g: 0, b: 0, a: 0}
+    - _DissipateTextureDetail_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _DissipateTexture_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _DistortTex_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
+    - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GlowColor: {r: 1, g: 1, b: 1, a: 0.5}
+    - _Mask2RGBA: {r: 1, g: 0, b: 0, a: 0}
+    - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
+    - _MaskRGBA: {r: 1, g: 0, b: 0, a: 0}
+    - _MaskTex2_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _MaskTex_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
+    - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.4}
+  m_BuildTextureStacks: []
+--- !u!21 &1008693185
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: hywhfonts Atlas Material Instance
+  m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - MASK_HARD
+  - RATIOS_OFF
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cube:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissipateDetailTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissipateTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FaceTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 8346977884397242245, guid: d34ff4bc9af35424785ba1393187444a, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OutlineTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Ambient: 0.5
+    - _Bevel: 0.5
+    - _BevelClamp: 0
+    - _BevelOffset: 0
+    - _BevelRoundness: 0
+    - _BevelWidth: 0
+    - _Blend: 0
+    - _BumpFace: 0
+    - _BumpOutline: 0
+    - _CenterGlowIntensity: 0
+    - _CenterGlowPower: 1.2
+    - _ColorMask: 15
+    - _ComplicatedBlendMode: 0
+    - _CullMode: 0
+    - _DetailBlendMode: 0
+    - _DetailTexAngle: 0
+    - _DetailTex_Mode: 0
+    - _DetailTex_SpeedU: 0
+    - _DetailTex_SpeedV: 0
+    - _Detail_Mode: 0
+    - _Diffuse: 0.5
+    - _DissipateAmount: 0.1
+    - _DissipateDetailTex_Mode: 0
+    - _DissipateSliderWidth: 0.05
+    - _DissipateSmooth: 0
+    - _DissipateSpeed_U: 0
+    - _DissipateSpeed_V: 0
+    - _DissipateTexture_Mode: 0
+    - _DissipateUV_Swap: 0
+    - _DissipateU_Mirror: 0
+    - _DissipateV_Mirror: 0
+    - _DisspateDetailTexAngle: 0
+    - _DisspateTexAngle: 0
+    - _DistAngle: 0
+    - _DistForceU: 1
+    - _DistForceV: 1
+    - _DistSpeed_U: 0
+    - _DistSpeed_V: 0
+    - _DistortTex_Mode: 0
+    - _DstBlend: 10
+    - _FaceDilate: 0
+    - _FaceShininess: 0
+    - _FaceUVSpeedX: 0
+    - _FaceUVSpeedY: 0
+    - _GlowInner: 0
+    - _GlowOffset: 0
+    - _GlowOuter: 0.525
+    - _GlowPower: 0.2
+    - _GradientScale: 5
+    - _LightAngle: 3.1416
+    - _Mask2TexAngle: 28
+    - _MaskSoftnessX: 0
+    - _MaskSoftnessY: 0
+    - _MaskTex2Angle: 0
+    - _MaskTex2_Mode: 0
+    - _MaskTex2_SpeedRotate: 0
+    - _MaskTex2_SpeedU: 0
+    - _MaskTex2_SpeedV: 0
+    - _MaskTexAngle: 0
+    - _MaskTex_Mode: 0
+    - _MaskTex_SpeedRotate: 0
+    - _MaskTex_SpeedU: 0
+    - _MaskTex_SpeedV: 0
+    - _OutlineShininess: 0
+    - _OutlineSoftness: 0
+    - _OutlineUVSpeedX: 0
+    - _OutlineUVSpeedY: 0
+    - _OutlineWidth: 0
+    - _PatternDensity: 10
+    - _PatternEdge: 0.01
+    - _PatternScale: 0.7
+    - _PatternSpeedU: 0
+    - _PatternSpeedV: 0
+    - _PerspectiveFilter: 0.875
+    - _Reflectivity: 10
+    - _ScaleRatioA: 1
+    - _ScaleRatioB: 1
+    - _ScaleRatioC: 1
+    - _ScaleX: 1
+    - _ScaleY: 1
+    - _ShaderFlags: 0
+    - _Sharpness: 0
+    - _SpecularPower: 2
+    - _SrcBlend: 1
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _TextureHeight: 4096
+    - _TextureWidth: 4096
+    - _UnderlayDilate: 0
+    - _UnderlayOffsetX: 0.2
+    - _UnderlayOffsetY: -0.2
+    - _UnderlaySoftness: 0.2
+    - _UseComplicatedBlendMode: 0
+    - _VertexOffsetX: 0
+    - _VertexOffsetY: 0
+    - _WeightBold: 0.75
+    - _WeightNormal: 0
+    m_Colors:
+    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _DetailColor: {r: 1, g: 1, b: 1, a: 1}
+    - _DetailTex_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _DissipateColor: {r: 1, g: 1, b: 0, a: 1}
+    - _DissipateRGBA: {r: 1, g: 0, b: 0, a: 0}
+    - _DissipateTextureDetail_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _DissipateTexture_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _DistortTex_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
+    - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GlowColor: {r: 1, g: 1, b: 1, a: 0.5}
+    - _Mask2RGBA: {r: 1, g: 0, b: 0, a: 0}
+    - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
+    - _MaskRGBA: {r: 1, g: 0, b: 0, a: 0}
+    - _MaskTex2_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _MaskTex_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
+    - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.4}
+  m_BuildTextureStacks: []
 --- !u!1001 &1159743372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -621,7 +1026,28 @@ PrefabInstance:
       propertyPath: m_text
       value: 'Layered Architecture
 
+
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2100948630162164285, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
+      propertyPath: m_margin.z
+      value: -1.0660236
+      objectReference: {fileID: 0}
+    - target: {fileID: 2100948630162164285, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2100948630162164285, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2100948630162164285, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2100948630162164285, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190335
       objectReference: {fileID: 0}
     - target: {fileID: 2538704052761837837, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -666,6 +1092,46 @@ PrefabInstance:
     - target: {fileID: 4508065056357999548, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
       propertyPath: m_Name
       value: Frame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893556828000488880, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.213
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893556828000488880, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.49999928
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893556828000488880, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.49999928
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893556828000488880, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893556828000488880, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893556828000488880, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893556828000488880, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.642
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893556828000488880, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893556828000488880, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893556828000488880, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -746,6 +1212,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 393591512}
     m_Modifications:
+    - target: {fileID: 2100948630162164285, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
+      propertyPath: m_text
+      value: 'Default Lit
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2100948630162164285, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
+      propertyPath: m_fontMaterial
+      value: 
+      objectReference: {fileID: 1759288190}
     - target: {fileID: 2538704052761837837, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -764,15 +1240,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2538704052761837837, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2538704052761837837, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2538704052761837837, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2538704052761837837, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -803,64 +1279,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2538704052761837837, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
   m_PrefabInstance: {fileID: 1345865650}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1349003245
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1349003246}
-  - component: {fileID: 1349003247}
-  m_Layer: 0
-  m_Name: DecalProjector
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1349003246
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349003245}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.7283785, y: -0, z: -0, w: 0.685175}
-  m_LocalPosition: {x: 0.08300018, y: 0.685, z: -0.789}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 14360986}
-  m_LocalEulerAnglesHint: {x: 93.50101, y: 0, z: 0}
---- !u!114 &1349003247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349003245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f19d9143a39eb3b46bc4563e9889cfbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 5ddef328580b57849899c3856304754f, type: 2}
-  m_DrawDistance: 1000
-  m_FadeScale: 0.9
-  m_StartAngleFade: 180
-  m_EndAngleFade: 180
-  m_UVScale: {x: 1, y: 1}
-  m_UVBias: {x: 0, y: 0}
-  m_AffectsTransparency: 0
-  m_DecalLayerMask: 1
-  m_ScaleMode: 0
-  m_Offset: {x: 0, y: 0, z: 0}
-  m_Size: {x: 1, y: 1, z: 1}
-  m_FadeFactor: 1
-  m_Version: 2
 --- !u!1001 &1462671365
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -869,6 +1287,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 467893054}
     m_Modifications:
+    - target: {fileID: 2100948630162164285, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
+      propertyPath: m_text
+      value: Decal (Not Ready)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2100948630162164285, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
+      propertyPath: m_fontMaterial
+      value: 
+      objectReference: {fileID: 1008693185}
     - target: {fileID: 2538704052761837837, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -936,11 +1362,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2100948630162164285, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
       propertyPath: m_text
-      value: 'Layered Rock
-
-
-'
+      value: Layered Rock
       objectReference: {fileID: 0}
+    - target: {fileID: 2100948630162164285, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
+      propertyPath: m_fontMaterial
+      value: 
+      objectReference: {fileID: 1711747782}
     - target: {fileID: 2538704052761837837, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -981,14 +1408,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2641792723459742541, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2641792723459742541, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 4508065056357999548, guid: fa68eb83f30beda4baf787f43a2be6c1, type: 3}
       propertyPath: m_Name
       value: Frame
@@ -1016,7 +1435,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1686588374}
   m_Layer: 0
-  m_Name: TEST_01 (12)
+  m_Name: Layered Architecture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1031,7 +1450,7 @@ Transform:
   m_GameObject: {fileID: 1686588373}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1039,6 +1458,396 @@ Transform:
   - {fileID: 594078230}
   m_Father: {fileID: 123155155}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &1711747782
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: hywhfonts Atlas Material Instance
+  m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - MASK_HARD
+  - RATIOS_OFF
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cube:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissipateDetailTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissipateTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FaceTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 8346977884397242245, guid: d34ff4bc9af35424785ba1393187444a, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OutlineTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Ambient: 0.5
+    - _Bevel: 0.5
+    - _BevelClamp: 0
+    - _BevelOffset: 0
+    - _BevelRoundness: 0
+    - _BevelWidth: 0
+    - _Blend: 0
+    - _BumpFace: 0
+    - _BumpOutline: 0
+    - _CenterGlowIntensity: 0
+    - _CenterGlowPower: 1.2
+    - _ColorMask: 15
+    - _ComplicatedBlendMode: 0
+    - _CullMode: 0
+    - _DetailBlendMode: 0
+    - _DetailTexAngle: 0
+    - _DetailTex_Mode: 0
+    - _DetailTex_SpeedU: 0
+    - _DetailTex_SpeedV: 0
+    - _Detail_Mode: 0
+    - _Diffuse: 0.5
+    - _DissipateAmount: 0.1
+    - _DissipateDetailTex_Mode: 0
+    - _DissipateSliderWidth: 0.05
+    - _DissipateSmooth: 0
+    - _DissipateSpeed_U: 0
+    - _DissipateSpeed_V: 0
+    - _DissipateTexture_Mode: 0
+    - _DissipateUV_Swap: 0
+    - _DissipateU_Mirror: 0
+    - _DissipateV_Mirror: 0
+    - _DisspateDetailTexAngle: 0
+    - _DisspateTexAngle: 0
+    - _DistAngle: 0
+    - _DistForceU: 1
+    - _DistForceV: 1
+    - _DistSpeed_U: 0
+    - _DistSpeed_V: 0
+    - _DistortTex_Mode: 0
+    - _DstBlend: 10
+    - _FaceDilate: 0
+    - _FaceShininess: 0
+    - _FaceUVSpeedX: 0
+    - _FaceUVSpeedY: 0
+    - _GlowInner: 0
+    - _GlowOffset: 0
+    - _GlowOuter: 0.525
+    - _GlowPower: 0.2
+    - _GradientScale: 5
+    - _LightAngle: 3.1416
+    - _Mask2TexAngle: 28
+    - _MaskSoftnessX: 0
+    - _MaskSoftnessY: 0
+    - _MaskTex2Angle: 0
+    - _MaskTex2_Mode: 0
+    - _MaskTex2_SpeedRotate: 0
+    - _MaskTex2_SpeedU: 0
+    - _MaskTex2_SpeedV: 0
+    - _MaskTexAngle: 0
+    - _MaskTex_Mode: 0
+    - _MaskTex_SpeedRotate: 0
+    - _MaskTex_SpeedU: 0
+    - _MaskTex_SpeedV: 0
+    - _OutlineShininess: 0
+    - _OutlineSoftness: 0
+    - _OutlineUVSpeedX: 0
+    - _OutlineUVSpeedY: 0
+    - _OutlineWidth: 0
+    - _PatternDensity: 10
+    - _PatternEdge: 0.01
+    - _PatternScale: 0.7
+    - _PatternSpeedU: 0
+    - _PatternSpeedV: 0
+    - _PerspectiveFilter: 0.875
+    - _Reflectivity: 10
+    - _ScaleRatioA: 1
+    - _ScaleRatioB: 1
+    - _ScaleRatioC: 1
+    - _ScaleX: 1
+    - _ScaleY: 1
+    - _ShaderFlags: 0
+    - _Sharpness: 0
+    - _SpecularPower: 2
+    - _SrcBlend: 1
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _TextureHeight: 4096
+    - _TextureWidth: 4096
+    - _UnderlayDilate: 0
+    - _UnderlayOffsetX: 0.2
+    - _UnderlayOffsetY: -0.2
+    - _UnderlaySoftness: 0.2
+    - _UseComplicatedBlendMode: 0
+    - _VertexOffsetX: 0
+    - _VertexOffsetY: 0
+    - _WeightBold: 0.75
+    - _WeightNormal: 0
+    m_Colors:
+    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _DetailColor: {r: 1, g: 1, b: 1, a: 1}
+    - _DetailTex_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _DissipateColor: {r: 1, g: 1, b: 0, a: 1}
+    - _DissipateRGBA: {r: 1, g: 0, b: 0, a: 0}
+    - _DissipateTextureDetail_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _DissipateTexture_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _DistortTex_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
+    - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GlowColor: {r: 1, g: 1, b: 1, a: 0.5}
+    - _Mask2RGBA: {r: 1, g: 0, b: 0, a: 0}
+    - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
+    - _MaskRGBA: {r: 1, g: 0, b: 0, a: 0}
+    - _MaskTex2_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _MaskTex_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
+    - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.4}
+  m_BuildTextureStacks: []
+--- !u!21 &1759288190
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: hywhfonts Atlas Material Instance
+  m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - MASK_HARD
+  - RATIOS_OFF
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cube:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissipateDetailTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissipateTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FaceTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 8346977884397242245, guid: d34ff4bc9af35424785ba1393187444a, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OutlineTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Ambient: 0.5
+    - _Bevel: 0.5
+    - _BevelClamp: 0
+    - _BevelOffset: 0
+    - _BevelRoundness: 0
+    - _BevelWidth: 0
+    - _Blend: 0
+    - _BumpFace: 0
+    - _BumpOutline: 0
+    - _CenterGlowIntensity: 0
+    - _CenterGlowPower: 1.2
+    - _ColorMask: 15
+    - _ComplicatedBlendMode: 0
+    - _CullMode: 0
+    - _DetailBlendMode: 0
+    - _DetailTexAngle: 0
+    - _DetailTex_Mode: 0
+    - _DetailTex_SpeedU: 0
+    - _DetailTex_SpeedV: 0
+    - _Detail_Mode: 0
+    - _Diffuse: 0.5
+    - _DissipateAmount: 0.1
+    - _DissipateDetailTex_Mode: 0
+    - _DissipateSliderWidth: 0.05
+    - _DissipateSmooth: 0
+    - _DissipateSpeed_U: 0
+    - _DissipateSpeed_V: 0
+    - _DissipateTexture_Mode: 0
+    - _DissipateUV_Swap: 0
+    - _DissipateU_Mirror: 0
+    - _DissipateV_Mirror: 0
+    - _DisspateDetailTexAngle: 0
+    - _DisspateTexAngle: 0
+    - _DistAngle: 0
+    - _DistForceU: 1
+    - _DistForceV: 1
+    - _DistSpeed_U: 0
+    - _DistSpeed_V: 0
+    - _DistortTex_Mode: 0
+    - _DstBlend: 10
+    - _FaceDilate: 0
+    - _FaceShininess: 0
+    - _FaceUVSpeedX: 0
+    - _FaceUVSpeedY: 0
+    - _GlowInner: 0
+    - _GlowOffset: 0
+    - _GlowOuter: 0.525
+    - _GlowPower: 0.2
+    - _GradientScale: 5
+    - _LightAngle: 3.1416
+    - _Mask2TexAngle: 28
+    - _MaskSoftnessX: 0
+    - _MaskSoftnessY: 0
+    - _MaskTex2Angle: 0
+    - _MaskTex2_Mode: 0
+    - _MaskTex2_SpeedRotate: 0
+    - _MaskTex2_SpeedU: 0
+    - _MaskTex2_SpeedV: 0
+    - _MaskTexAngle: 0
+    - _MaskTex_Mode: 0
+    - _MaskTex_SpeedRotate: 0
+    - _MaskTex_SpeedU: 0
+    - _MaskTex_SpeedV: 0
+    - _OutlineShininess: 0
+    - _OutlineSoftness: 0
+    - _OutlineUVSpeedX: 0
+    - _OutlineUVSpeedY: 0
+    - _OutlineWidth: 0
+    - _PatternDensity: 10
+    - _PatternEdge: 0.01
+    - _PatternScale: 0.7
+    - _PatternSpeedU: 0
+    - _PatternSpeedV: 0
+    - _PerspectiveFilter: 0.875
+    - _Reflectivity: 10
+    - _ScaleRatioA: 1
+    - _ScaleRatioB: 1
+    - _ScaleRatioC: 1
+    - _ScaleX: 1
+    - _ScaleY: 1
+    - _ShaderFlags: 0
+    - _Sharpness: 0
+    - _SpecularPower: 2
+    - _SrcBlend: 1
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _TextureHeight: 4096
+    - _TextureWidth: 4096
+    - _UnderlayDilate: 0
+    - _UnderlayOffsetX: 0.2
+    - _UnderlayOffsetY: -0.2
+    - _UnderlaySoftness: 0.2
+    - _UseComplicatedBlendMode: 0
+    - _VertexOffsetX: 0
+    - _VertexOffsetY: 0
+    - _WeightBold: 0.75
+    - _WeightNormal: 0
+    m_Colors:
+    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _DetailColor: {r: 1, g: 1, b: 1, a: 1}
+    - _DetailTex_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _DissipateColor: {r: 1, g: 1, b: 0, a: 1}
+    - _DissipateRGBA: {r: 1, g: 0, b: 0, a: 0}
+    - _DissipateTextureDetail_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _DissipateTexture_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _DistortTex_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
+    - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GlowColor: {r: 1, g: 1, b: 1, a: 0.5}
+    - _Mask2RGBA: {r: 1, g: 0, b: 0, a: 0}
+    - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
+    - _MaskRGBA: {r: 1, g: 0, b: 0, a: 0}
+    - _MaskTex2_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _MaskTex_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
+    - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.4}
+  m_BuildTextureStacks: []
 --- !u!1 &1779941877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,7 +1858,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1779941878}
   m_Layer: 0
-  m_Name: TEST_01 (13)
+  m_Name: Layered Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1372,6 +2181,201 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
+--- !u!21 &1861338837
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: hywhfonts Atlas Material Instance
+  m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - MASK_HARD
+  - RATIOS_OFF
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cube:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissipateDetailTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissipateTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FaceTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 8346977884397242245, guid: d34ff4bc9af35424785ba1393187444a, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OutlineTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Ambient: 0.5
+    - _Bevel: 0.5
+    - _BevelClamp: 0
+    - _BevelOffset: 0
+    - _BevelRoundness: 0
+    - _BevelWidth: 0
+    - _Blend: 0
+    - _BumpFace: 0
+    - _BumpOutline: 0
+    - _CenterGlowIntensity: 0
+    - _CenterGlowPower: 1.2
+    - _ColorMask: 15
+    - _ComplicatedBlendMode: 0
+    - _CullMode: 0
+    - _DetailBlendMode: 0
+    - _DetailTexAngle: 0
+    - _DetailTex_Mode: 0
+    - _DetailTex_SpeedU: 0
+    - _DetailTex_SpeedV: 0
+    - _Detail_Mode: 0
+    - _Diffuse: 0.5
+    - _DissipateAmount: 0.1
+    - _DissipateDetailTex_Mode: 0
+    - _DissipateSliderWidth: 0.05
+    - _DissipateSmooth: 0
+    - _DissipateSpeed_U: 0
+    - _DissipateSpeed_V: 0
+    - _DissipateTexture_Mode: 0
+    - _DissipateUV_Swap: 0
+    - _DissipateU_Mirror: 0
+    - _DissipateV_Mirror: 0
+    - _DisspateDetailTexAngle: 0
+    - _DisspateTexAngle: 0
+    - _DistAngle: 0
+    - _DistForceU: 1
+    - _DistForceV: 1
+    - _DistSpeed_U: 0
+    - _DistSpeed_V: 0
+    - _DistortTex_Mode: 0
+    - _DstBlend: 10
+    - _FaceDilate: 0
+    - _FaceShininess: 0
+    - _FaceUVSpeedX: 0
+    - _FaceUVSpeedY: 0
+    - _GlowInner: 0
+    - _GlowOffset: 0
+    - _GlowOuter: 0.525
+    - _GlowPower: 0.2
+    - _GradientScale: 5
+    - _LightAngle: 3.1416
+    - _Mask2TexAngle: 28
+    - _MaskSoftnessX: 0
+    - _MaskSoftnessY: 0
+    - _MaskTex2Angle: 0
+    - _MaskTex2_Mode: 0
+    - _MaskTex2_SpeedRotate: 0
+    - _MaskTex2_SpeedU: 0
+    - _MaskTex2_SpeedV: 0
+    - _MaskTexAngle: 0
+    - _MaskTex_Mode: 0
+    - _MaskTex_SpeedRotate: 0
+    - _MaskTex_SpeedU: 0
+    - _MaskTex_SpeedV: 0
+    - _OutlineShininess: 0
+    - _OutlineSoftness: 0
+    - _OutlineUVSpeedX: 0
+    - _OutlineUVSpeedY: 0
+    - _OutlineWidth: 0
+    - _PatternDensity: 10
+    - _PatternEdge: 0.01
+    - _PatternScale: 0.7
+    - _PatternSpeedU: 0
+    - _PatternSpeedV: 0
+    - _PerspectiveFilter: 0.875
+    - _Reflectivity: 10
+    - _ScaleRatioA: 1
+    - _ScaleRatioB: 1
+    - _ScaleRatioC: 1
+    - _ScaleX: 1
+    - _ScaleY: 1
+    - _ShaderFlags: 0
+    - _Sharpness: 0
+    - _SpecularPower: 2
+    - _SrcBlend: 1
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _TextureHeight: 4096
+    - _TextureWidth: 4096
+    - _UnderlayDilate: 0
+    - _UnderlayOffsetX: 0.2
+    - _UnderlayOffsetY: -0.2
+    - _UnderlaySoftness: 0.2
+    - _UseComplicatedBlendMode: 0
+    - _VertexOffsetX: 0
+    - _VertexOffsetY: 0
+    - _WeightBold: 0.75
+    - _WeightNormal: 0
+    m_Colors:
+    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _DetailColor: {r: 1, g: 1, b: 1, a: 1}
+    - _DetailTex_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _DissipateColor: {r: 1, g: 1, b: 0, a: 1}
+    - _DissipateRGBA: {r: 1, g: 0, b: 0, a: 0}
+    - _DissipateTextureDetail_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _DissipateTexture_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _DistortTex_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
+    - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GlowColor: {r: 1, g: 1, b: 1, a: 0.5}
+    - _Mask2RGBA: {r: 1, g: 0, b: 0, a: 0}
+    - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
+    - _MaskRGBA: {r: 1, g: 0, b: 0, a: 0}
+    - _MaskTex2_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _MaskTex_TO: {r: 1, g: 1, b: 0, a: 0}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
+    - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.4}
+  m_BuildTextureStacks: []
 --- !u!1001 &1931778846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1396,17 +2400,21 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6ce19f9fd315dfe4fb44c900c8f80aee, type: 2}
+    - target: {fileID: 5362450003807211987, guid: e2be9286629be394ea36441c43dfe130, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4d57e15d854565e4483879ebc20325d8, type: 2}
     - target: {fileID: 5867010846986144201, guid: e2be9286629be394ea36441c43dfe130, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5867010846986144201, guid: e2be9286629be394ea36441c43dfe130, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5867010846986144201, guid: e2be9286629be394ea36441c43dfe130, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5867010846986144201, guid: e2be9286629be394ea36441c43dfe130, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1414,7 +2422,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5867010846986144201, guid: e2be9286629be394ea36441c43dfe130, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1
+      value: 0.078
       objectReference: {fileID: 0}
     - target: {fileID: 5867010846986144201, guid: e2be9286629be394ea36441c43dfe130, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1422,19 +2430,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5867010846986144201, guid: e2be9286629be394ea36441c43dfe130, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5867010846986144201, guid: e2be9286629be394ea36441c43dfe130, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5867010846986144201, guid: e2be9286629be394ea36441c43dfe130, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5867010846986144201, guid: e2be9286629be394ea36441c43dfe130, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5867010846986144201, guid: e2be9286629be394ea36441c43dfe130, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1925,6 +2933,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 1686588374}
     m_Modifications:
     - target: {fileID: 2574541566344006759, guid: b4a6f7ff781ada246aabf3555addf326, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2574541566344006759, guid: b4a6f7ff781ada246aabf3555addf326, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2574541566344006759, guid: b4a6f7ff781ada246aabf3555addf326, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2574541566344006759, guid: b4a6f7ff781ada246aabf3555addf326, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1938,7 +2958,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2574541566344006759, guid: b4a6f7ff781ada246aabf3555addf326, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2574541566344006759, guid: b4a6f7ff781ada246aabf3555addf326, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1946,7 +2966,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2574541566344006759, guid: b4a6f7ff781ada246aabf3555addf326, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2574541566344006759, guid: b4a6f7ff781ada246aabf3555addf326, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1958,10 +2978,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2574541566344006759, guid: b4a6f7ff781ada246aabf3555addf326, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2574541566344006759, guid: b4a6f7ff781ada246aabf3555addf326, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2574541566344006759, guid: b4a6f7ff781ada246aabf3555addf326, type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2950221997538924253, guid: b4a6f7ff781ada246aabf3555addf326, type: 3}

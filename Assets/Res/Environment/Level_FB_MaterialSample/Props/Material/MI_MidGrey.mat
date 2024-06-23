@@ -24,7 +24,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MI_MidGrey
-  m_Shader: {fileID: -6465566751694194690, guid: 748e4eff52e574246ad0a76e448a9e08, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 07cc19202cf610e4388c02c69d391f26, type: 3}
   m_Parent: {fileID: 2100000, guid: 6ce19f9fd315dfe4fb44c900c8f80aee, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:

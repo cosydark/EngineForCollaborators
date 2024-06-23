@@ -53,11 +53,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseLayer_MaskMap:
-        m_Texture: {fileID: 2800000, guid: 1c12489597d85074199f37319f62dea9, type: 3}
+        m_Texture: {fileID: 2800000, guid: 26ac739cf183bcb488eb820b21323bef, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseLayer_NormalMap:
-        m_Texture: {fileID: 2800000, guid: fea04797d0d31bc408d3f6387b054c77, type: 3}
+        m_Texture: {fileID: 2800000, guid: fe3693a9f214c6540ae84c4527bb8151, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -113,7 +113,7 @@ Material:
     - _CustomEnum: 2
     - _CustomOption0: 1
     - _CustomOption1: 1
-    - _CustomOption2: 0
+    - _CustomOption2: 1
     - _DECALLAYER: 6
     - _DecalLayer: 1
     - _ENUM_LAYERCOUNT: 2
@@ -138,12 +138,15 @@ Material:
     - _TilingLayer_G_Use2U: 0
     - _TilingLayer_MatchScaling: 1
     - _TilingLayer_R_BlendMode: 1
+    - _TilingLayer_R_BlendMode_1: 1
     - _TilingLayer_R_BlendRadius: 0.007
     - _TilingLayer_R_HeightOffset: -0.02
+    - _TilingLayer_R_HexTiling: 0
     - _TilingLayer_R_MaskIntensity: 1
     - _TilingLayer_R_MatchScaling: 1
     - _TilingLayer_R_Porosity: 0
     - _TilingLayer_R_Tiling: 3.049071
+    - _TilingLayer_R_Use2U: 0
     - _TilingLayer_Tiling: 3.049071
     - _TilingLayer_Use2U: 0
     m_Colors:

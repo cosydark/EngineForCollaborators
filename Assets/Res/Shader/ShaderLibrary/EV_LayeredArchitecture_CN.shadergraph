@@ -9677,7 +9677,7 @@
     "m_RefNameGeneratedByDisplayName": "Enum LayerCount",
     "m_DefaultReferenceName": "_ENUM_LAYERCOUNT",
     "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": false,
+    "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
     "m_CustomSlotLabel": "",
     "m_DismissedVersion": 0,

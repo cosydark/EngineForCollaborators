@@ -140,7 +140,7 @@ Material:
     - _TilingLayer_R_BlendMode: 1
     - _TilingLayer_R_BlendMode_1: 1
     - _TilingLayer_R_BlendRadius: 0.007
-    - _TilingLayer_R_HeightOffset: -0.02
+    - _TilingLayer_R_HeightOffset: -0.028
     - _TilingLayer_R_HexTiling: 0
     - _TilingLayer_R_MaskIntensity: 1
     - _TilingLayer_R_MatchScaling: 1

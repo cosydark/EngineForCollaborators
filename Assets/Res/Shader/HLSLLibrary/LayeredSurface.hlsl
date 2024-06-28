@@ -69,6 +69,7 @@ void BlendWithHeight(MaterialLayer MLayer, float2 Coordinate, float IntensityMas
     float HeightBlendMask = lerp(BlendResult.x, BlendResult.y, BlendMode);
     
     MInput.Base_Color = lerp(MInput.Base_Color, BaseMapBlend, HeightBlendMask);
+    MInput.Base_Opacity = 1;
     MInput.TangentSpaceNormal_NormalTS = lerp(MInput.TangentSpaceNormal_NormalTS, NormalBlend, HeightBlendMask);
     MInput.Specular_Reflectance = lerp(MInput.Specular_Reflectance, MLayer.Reflectance, HeightBlendMask);
     MInput.Base_Metallic = lerp(MInput.Base_Metallic, GetMaterialMetallicFromMaskMap(MaskMapBlend), HeightBlendMask);
@@ -90,6 +91,7 @@ void BlendWithHeight_Hex(MaterialLayer MLayer, float2 Coordinate, float Intensit
     float HeightBlendMask = lerp(BlendResult.x, BlendResult.y, BlendMode);
     
     MInput.Base_Color = lerp(MInput.Base_Color, BaseMapBlend, HeightBlendMask);
+    MInput.Base_Opacity = 1;
     MInput.TangentSpaceNormal_NormalTS = lerp(MInput.TangentSpaceNormal_NormalTS, NormalBlend, HeightBlendMask);
     MInput.Specular_Reflectance = lerp(MInput.Specular_Reflectance, MLayer.Reflectance, HeightBlendMask);
     MInput.Base_Metallic = lerp(MInput.Base_Metallic, GetMaterialMetallicFromMaskMap(MaskMapBlend), HeightBlendMask);
@@ -106,6 +108,7 @@ void BlendWithOutHeight(MaterialLayer MLayer, float2 Coordinate, float Intensity
     float4 MaskMapBlend = SAMPLE_TEXTURE2D(MLayer.MaskMap, SamplerLinearRepeat, Coordinate);
     
     MInput.Base_Color = lerp(MInput.Base_Color, BaseMapBlend, IntensityMask);
+    MInput.Base_Opacity = 1;
     MInput.TangentSpaceNormal_NormalTS = lerp(MInput.TangentSpaceNormal_NormalTS, NormalBlend, IntensityMask);
     MInput.Specular_Reflectance = lerp(MInput.Specular_Reflectance, MLayer.Reflectance, IntensityMask);
     MInput.Base_Metallic = lerp(MInput.Base_Metallic, GetMaterialMetallicFromMaskMap(MaskMapBlend), IntensityMask);
@@ -122,6 +125,7 @@ void BlendWithOutHeight_Hex(MaterialLayer MLayer, float2 Coordinate, float Inten
     float4 MaskMapBlend = SAMPLE_TEXTURE2D_HEX(MLayer.MaskMap, SamplerLinearRepeat, Coordinate);
     
     MInput.Base_Color = lerp(MInput.Base_Color, BaseMapBlend, IntensityMask);
+    MInput.Base_Opacity = 1;
     MInput.TangentSpaceNormal_NormalTS = lerp(MInput.TangentSpaceNormal_NormalTS, NormalBlend, IntensityMask);
     MInput.Specular_Reflectance = lerp(MInput.Specular_Reflectance, MLayer.Reflectance, IntensityMask);
     MInput.Base_Metallic = lerp(MInput.Base_Metallic, GetMaterialMetallicFromMaskMap(MaskMapBlend), IntensityMask);
@@ -142,6 +146,7 @@ void BlendWithHeightNoTexture(SimpleMaterialLayer SMLayer, float IntensityMask, 
     BaseColorBlend = lerp(1, BaseColorBlend, HeightBlendMask);
     
     MInput.Base_Color = saturate(MInput.Base_Color * BaseColorBlend);// Make BaseColor Physical
+    MInput.Base_Opacity = 1;
     MInput.TangentSpaceNormal_NormalTS = lerp(MInput.TangentSpaceNormal_NormalTS, NormalBlend, HeightBlendMask);
     MInput.Specular_Reflectance = lerp(MInput.Specular_Reflectance, SMLayer.Reflectance, HeightBlendMask);
     // MInput.Base.Metallic = lerp(MInput.Base.Metallic, GetMaterialMetallicFromMaskMap(MaskMapBlend), HeightBlendMask);
@@ -158,6 +163,7 @@ void BlendWithOutHeightNoTexture(SimpleMaterialLayer SMLayer, float IntensityMas
     BaseColorBlend = lerp(1, BaseColorBlend, IntensityMask);
     
     MInput.Base_Color = saturate(MInput.Base_Color * BaseColorBlend);// Make BaseColor Physical
+    MInput.Base_Opacity = 1;
     MInput.TangentSpaceNormal_NormalTS = lerp(MInput.TangentSpaceNormal_NormalTS, NormalBlend, IntensityMask);
     MInput.Specular_Reflectance = lerp(MInput.Specular_Reflectance, SMLayer.Reflectance, IntensityMask);
     // MInput.Base.Metallic = lerp(MInput.Base.Metallic, GetMaterialMetallicFromMaskMap(MaskMapBlend), HeightBlendMask);
@@ -174,6 +180,7 @@ void BlendDetailLayer(DetailLayer DLayer, float2 Coordinate, inout MInputType MI
     float4 MaskMapBlend = SAMPLE_TEXTURE2D(DLayer.MaskMap, SamplerLinearRepeat, Coordinate);
     
     MInput.Base_Color *= lerp(1, BaseMapAlbedoGrayValue, DLayer.AlbedoGrayValue);
+    MInput.Base_Opacity = 1;
     MInput.TangentSpaceNormal_NormalTS = BlendAngelCorrectedNormals(MInput.TangentSpaceNormal_NormalTS, NormalBlend);
     MInput.AO_AmbientOcclusion = min(MInput.AO_AmbientOcclusion, lerp(1, GetMaterialAOFromMaskMap(MaskMapBlend), DLayer.AmbientOcclusion));
 }
@@ -184,6 +191,7 @@ void InitializeTilingLayer(MaterialLayer MLayer, float2 Coordinate, inout MInput
     Mask.z = saturate(ModifyHeight(Mask.z, MLayer.HeightOffset));
     // Fill
     MInput.Base_Color = SAMPLE_TEXTURE2D(MLayer.BaseMap, SamplerLinearRepeat, Coordinate).rgb * MLayer.BaseColor.rgb;
+    MInput.Base_Opacity = 1;
     float4 normalmap = SAMPLE_TEXTURE2D(MLayer.NormalMap, SamplerLinearRepeat, Coordinate);
     normalmap.g = 1 - normalmap.g;
     MInput.TangentSpaceNormal_NormalTS = GetNormalTSFromNormalTex(normalmap, MLayer.NormalScale);
@@ -200,6 +208,7 @@ void InitializeTilingLayer_Hex(MaterialLayer MLayer, float2 Coordinate, inout MI
     Mask.z = saturate(ModifyHeight(Mask.z, MLayer.HeightOffset));
     // Fill
     MInput.Base_Color = SAMPLE_TEXTURE2D_HEX(MLayer.BaseMap, SamplerLinearRepeat, Coordinate).rgb * MLayer.BaseColor.rgb;
+    MInput.Base_Opacity = 1;
     float4 normalmap = SAMPLE_TEXTURE2D_HEX(MLayer.NormalMap, SamplerLinearRepeat, Coordinate);
     normalmap.g = 1 - normalmap.g;
     MInput.TangentSpaceNormal_NormalTS = GetNormalTSFromNormalTex(normalmap, MLayer.NormalScale);
@@ -270,7 +279,7 @@ void SetupMInput(inout MInputType MInput)
 {
     MInput.Base_Color = float3(0.5, 0.5, 0.5);
     MInput.TangentSpaceNormal_NormalTS = float3(0, 1, 0);
-    // MInput.Base_Opacity = 1;
+    MInput.Base_Opacity = 1;
     MInput.Base_Metallic = 0.5;
     MInput.AO_AmbientOcclusion = 0.5;
     MInput.Detail_Height = 0.5;

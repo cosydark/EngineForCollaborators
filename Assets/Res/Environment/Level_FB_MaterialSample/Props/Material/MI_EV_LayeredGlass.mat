@@ -1,0 +1,315 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5829027641763623726
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 13
+  hdPluginSubTargetMaterialVersions:
+    m_Keys: []
+    m_Values: 
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MI_EV_LayeredGlass
+  m_Shader: {fileID: -6465566751694194690, guid: 4ae3cf1e209bf6a479a601c96468d250, type: 3}
+  m_Parent: {fileID: 2100000, guid: 2aaaf29ddacdc314eaae8647ff227e2e, type: 2}
+  m_ModifiedSerializedProperties: 16
+  m_ValidKeywords:
+  - _DISABLE_DECALS
+  - _DISABLE_SSR
+  - _DISABLE_SSR_TRANSPARENT
+  - _ENABLE_FOG_ON_TRANSPARENT
+  - _ENUM_LAYERCOUNT_DECAL02
+  - _SURFACE_TYPE_TRANSPARENT
+  m_InvalidKeywords:
+  - MATERIAL_ENABLE_DEFERRED
+  - MATERIAL_ENUM_LAYERCOUNT_TILINGR_WITHTOPPING
+  - MATERIAL_RECEIVE_DECAL
+  - MATERIAL_USE_CUSTOM_OPTION0
+  - MATERIAL_USE_CUSTOM_OPTION1
+  - MATERIAL_USE_CUSTOM_OPTION2
+  - USE_PM_ADDITIONALLAYER
+  - USE_PM_DETAILLAYER
+  - USE_PM_TILINGLAYER
+  - USE_PM_TILINGLAYER_G
+  - USE_PM_TILINGLAYER_R
+  - USE_PM_TOPPINGLAYER
+  - _ADDITIONALLAYER_ENABLE_ON
+  - _DECALLAYER_LAYER1
+  - _ENUM_LAYERCOUNT_TILINGR_WITHTOPPING
+  - _TILINGLAYER_ENABLE_ON
+  - _TILINGLAYER_G_ENABLE_ON
+  - _TILINGLAYER_R_ENABLE_ON
+  - _TOPPINGLAYER_ENABLE_ON
+  - __TILING
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    MotionVector: User
+    RenderType: Transparent
+  disabledShaderPasses:
+  - Distortion
+  - TransparentDepthPrepass
+  - TransparentDepthPostpass
+  - TransparentBackface
+  - MOTIONVECTORS
+  - RayTracingPrepass
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseLayer_DetailMap:
+        m_Texture: {fileID: 2800000, guid: c8218ad73e938af43be758645778f6c9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseLayer_MaskMap:
+        m_Texture: {fileID: 2800000, guid: 26ac739cf183bcb488eb820b21323bef, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseLayer_NormalMap:
+        m_Texture: {fileID: 2800000, guid: dc330a3e17a837446a8887394eea7a90, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseLayer_Rock_DetailMap:
+        m_Texture: {fileID: 2800000, guid: c8218ad73e938af43be758645778f6c9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseLayer_Rock_MaskMap:
+        m_Texture: {fileID: 2800000, guid: cf1dc4b9b32bc8f4fb812f9cd453dfd8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseLayer_Rock_NormalMap:
+        m_Texture: {fileID: 2800000, guid: dc330a3e17a837446a8887394eea7a90, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: bac8a3f60c66d264dbff44e8fbd73857, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BlendMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DecalLayer_G_BaseMap:
+        m_Texture: {fileID: 2800000, guid: 8f781ce53edb13542b8f45492f530a22, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DecalLayer_R_BaseMap:
+        m_Texture: {fileID: 2800000, guid: f7de3959e9869f049a5f7f5329f9508a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DecalLayer_R_MaskMap:
+        m_Texture: {fileID: 2800000, guid: db6b55ebf0970464e86a17bb72412d8e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DecalLayer_R_MaskMap_1:
+        m_Texture: {fileID: 2800000, guid: a62597128c175dc479e2ede62cf6c7b6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailLayer_DetailMap:
+        m_Texture: {fileID: 2800000, guid: eb1629cfd216e634bb3821934ed773df, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailLayer_MaskMap:
+        m_Texture: {fileID: 2800000, guid: 356a3964af64e6840a534bf605a59f61, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailLayer_NormalMap:
+        m_Texture: {fileID: 2800000, guid: b67c22a9ea97c8c4bb5a1e2933ab0787, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Detail_BaseMap:
+        m_Texture: {fileID: 2800000, guid: b741e081faaf7134db1eae755059ea29, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Detail_MaskMap:
+        m_Texture: {fileID: 2800000, guid: e54be53f6980d9b4d93cab92150634a1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Detail_NormalMap:
+        m_Texture: {fileID: 2800000, guid: 3029afc97add95b4f837772e47e2742a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskMap:
+        m_Texture: {fileID: 2800000, guid: c2e4bf8de12b42b49b6d2e4085b04297, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: b61c70aa5cbd22c4a89344911c99b6e2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_BaseMap:
+        m_Texture: {fileID: 2800000, guid: 535749fbdcdda4546a3b1f18b5a74ed0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_G_BaseMap:
+        m_Texture: {fileID: 2800000, guid: 691e8b919f9cf484ab15ba33f74f3ce6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_G_MaskMap:
+        m_Texture: {fileID: 2800000, guid: 356a3964af64e6840a534bf605a59f61, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_G_NormalMap:
+        m_Texture: {fileID: 2800000, guid: b67c22a9ea97c8c4bb5a1e2933ab0787, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_MaskMap:
+        m_Texture: {fileID: 2800000, guid: fa479bb08287c274fa843c0df0414493, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_NormalMap:
+        m_Texture: {fileID: 2800000, guid: dc330a3e17a837446a8887394eea7a90, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_R_BaseMap:
+        m_Texture: {fileID: 2800000, guid: 6ce1e8f2a01bfb042a69cf8f1386ed73, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_R_MaskMap:
+        m_Texture: {fileID: 2800000, guid: 5c2a2b934490efd42aeef6d89539aaad, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TilingLayer_R_NormalMap:
+        m_Texture: {fileID: 2800000, guid: fc38b64e01e256b43a0b6aca11c9124e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ToppingLayer_BaseMap:
+        m_Texture: {fileID: 2800000, guid: 9fc7ffdddf7b39c4397fb9fd081a4f60, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ToppingLayer_MaskMap:
+        m_Texture: {fileID: 2800000, guid: d8f2084d24e28fa4a899b31cc021461c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ToppingLayer_NormalMap:
+        m_Texture: {fileID: 2800000, guid: da40f6833434c944392377a6a054e224, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AdditionalLayer_AmbientOcclusion: 1
+    - _AdditionalLayer_BlendMode: 0
+    - _AdditionalLayer_BlendRadius: 0.1
+    - _AdditionalLayer_Enable: 1
+    - _AdditionalLayer_Height: 0.562
+    - _AdditionalLayer_HeightOffset: 0.278
+    - _AdditionalLayer_HeightOverlay: 0
+    - _AdditionalLayer_MaskContrast: 1
+    - _AdditionalLayer_MaskIntensity: 1
+    - _AdditionalLayer_Metallic: 0
+    - _AdditionalLayer_NormalScale: 0.3
+    - _AdditionalLayer_Reflectance: 0.5
+    - _AdditionalLayer_Roughness: 1
+    - _AdditionalLayer_UVIndex: 0
+    - _AdditionalLayer_UseHeightLerp: 0
+    - _AlphaDstBlend: 10
+    - _BaseLayer_DebugMask: 0
+    - _BaseLayer_DetailNormalScale: 1
+    - _BaseLayer_NormalScale: 1
+    - _BaseLayer_Rock_NormalScale: 1
+    - _CustomEnum: 4
+    - _CustomOption0: 1
+    - _CustomOption1: 1
+    - _CustomOption2: 0
+    - _DecalLayer_G_AffectBaseColor: 1
+    - _DecalLayer_G_AffectRoughness: 1
+    - _DecalLayer_G_MaskIntensity: 1
+    - _DecalLayer_R_AffectAmbientOcclusion: 0
+    - _DecalLayer_R_AffectBaseColor: 1
+    - _DecalLayer_R_AffectMetal: 0
+    - _DecalLayer_R_AffectNormal: 0
+    - _DecalLayer_R_AffectOpacity: 0
+    - _DecalLayer_R_AffectRoughness: 1
+    - _DecalLayer_R_MaskIntensity: 1
+    - _Deferred: 1
+    - _DetailLayer_DetailIntensity: 1
+    - _DetailLayer_DetailNormalScale: 0.3
+    - _DetailLayer_Enable: 1
+    - _DetailLayer_MatchScaling_Detail: 1
+    - _DetailLayer_NormalScale: 1
+    - _DetailLayer_Tiling_Detail: 2.6516132
+    - _DetailLayer_UVIndex_Detail: 1
+    - _Detail_MatchScaling: 0
+    - _Detail_NormalScale: 1
+    - _Detail_Tiling: 5
+    - _DstBlend: 10
+    - _ENUM_LAYERCOUNT: 1
+    - _RayTracing: 0
+    - _ReceivesSSR: 0
+    - _StencilRef: 0
+    - _StencilRefDepth: 0
+    - _StencilRefGBuffer: 2
+    - _StencilRefMV: 32
+    - _SupportDecal: 0
+    - _SupportDecals: 0
+    - _SurfaceType: 1
+    - _TerrainBlendEnable: 0
+    - _TilingLayer_G_BlendMode: 1
+    - _TilingLayer_G_BlendMode_1: 1
+    - _TilingLayer_G_BlendRadius: 0.1
+    - _TilingLayer_G_Enable: 1
+    - _TilingLayer_G_HeightOffset: -0.577
+    - _TilingLayer_G_MatchScaling: 1
+    - _TilingLayer_G_Tiling: 2.6516132
+    - _TilingLayer_G_UVIndex: 1
+    - _TilingLayer_G_Use2U: 1
+    - _TilingLayer_HeightOffset: 0
+    - _TilingLayer_HexTiling: 0
+    - _TilingLayer_MatchScaling: 1
+    - _TilingLayer_NormalScale: 1
+    - _TilingLayer_R_BlendMode: 0
+    - _TilingLayer_R_BlendRadius: 0.05
+    - _TilingLayer_R_Enable: 1
+    - _TilingLayer_R_HeightOffset: 0.649
+    - _TilingLayer_R_MatchScaling: 1
+    - _TilingLayer_R_Tiling: 2.6516132
+    - _TilingLayer_R_UVIndex: 1
+    - _TilingLayer_R_Use2U: 1
+    - _TilingLayer_Tiling: 2.6516132
+    - _TilingLayer_UVIndex: 1
+    - _TilingLayer_Use2U: 1
+    - _ToppingLayer_BlendMode: 0
+    - _ToppingLayer_BlendRadius: 0.175
+    - _ToppingLayer_Coverage: 0.341
+    - _ToppingLayer_Enable: 1
+    - _ToppingLayer_HeightOffset: 0.235
+    - _ToppingLayer_HexTiling: 0
+    - _ToppingLayer_MatchScaling: 1
+    - _ToppingLayer_NormalIntensity: 1
+    - _ToppingLayer_NormalScale: 1
+    - _ToppingLayer_Reflectance: 0.5
+    - _ToppingLayer_Spread: 0.403
+    - _ToppingLayer_Tiling: 2.651613
+    - _ToppingLayer_UVIndex: 1
+    - _ToppingLayer_UseHeightLerp: 0
+    - _UseAdditionalLayer: 1
+    - _UseVertexColor: 1
+    - _ZTestDepthEqualForOpaque: 4
+    - _ZWrite: 0
+    m_Colors:
+    - _AdditionalLayer_BaseColor: {r: 2.9960787, g: 2.9960787, b: 2.9960787, a: 1}
+    - _AdditionalLayer_Color: {r: 1, g: 0.827044, b: 0.827044, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 0.74509805}
+    - _Color: {r: 1, g: 1, b: 1, a: 0.74509805}
+    - _DetailLayer_HexTilingInfo: {r: 2.26, g: 0.456, b: 10, a: 0.2}
+    - _TilingLayer_BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TilingLayer_G_BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TilingLayer_R_BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ToppingLayer_BaseColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []

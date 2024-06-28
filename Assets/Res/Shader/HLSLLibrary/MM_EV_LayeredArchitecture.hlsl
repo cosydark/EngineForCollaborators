@@ -1,6 +1,6 @@
 // #include <UnityShaderVariables.cginc>
-#ifndef MM_EV_LAYEREDARCHITECTURE
-#define MM_EV_LAYEREDARCHITECTURE
+#ifndef MM_EV_LAYEREDGLASS
+#define MM_EV_LAYEREDGLASS
 
 #include "LayeredSurface.hlsl"
 
@@ -288,12 +288,6 @@ void Baselayered_float( bool USEBASELAYER,
     Out_Base_Roughness              = MInput.Base_Roughness;
     Out_Specular_Reflectance        = MInput.Specular_Reflectance;
 }
-
-// void LocalScaleX_float()
-// {
-//     // Scale
-//     float LocalScaleX = length(float3(unity_ObjectToWorld[0].x, unity_ObjectToWorld[1].x, unity_ObjectToWorld[2].x));
-// }
 
 
 // ===================================================================================================================

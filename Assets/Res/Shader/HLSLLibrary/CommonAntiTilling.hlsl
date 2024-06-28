@@ -159,7 +159,7 @@ struct FSlabParams_MInput
     // FSlabParams_TerrainBlend TerrainBlend;
     // Base;
     float3 Base_Color;
-    // float Base_Opacity;
+    float Base_Opacity;
     float Base_Metallic;
     float Base_Roughness;
     

@@ -14,7 +14,6 @@ Material:
   m_ValidKeywords:
   - _DISABLE_DECALS
   - _DISABLE_SSR
-  - _DISABLE_SSR_TRANSPARENT
   - _ENABLE_FOG_ON_TRANSPARENT
   - _ENUM_LAYERCOUNT_DECAL01
   - _SURFACE_TYPE_TRANSPARENT
@@ -33,11 +32,10 @@ Material:
     MotionVector: User
     RenderType: Transparent
   disabledShaderPasses:
-  - TransparentDepthPrepass
+  - MOTIONVECTORS
   - TransparentDepthPostpass
   - TransparentBackface
   - RayTracingPrepass
-  - MOTIONVECTORS
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -423,7 +421,7 @@ Material:
     - _PPDPrimitiveWidth: 1
     - _RayTracing: 0
     - _ReceivesSSR: 0
-    - _ReceivesSSRTransparent: 0
+    - _ReceivesSSRTransparent: 1
     - _Reflectance: 0.5
     - _RefractionModel: 0
     - _RenderQueueType: 4
@@ -437,10 +435,10 @@ Material:
     - _SpecularOcclusionMode: 1
     - _SrcBlend: 1
     - _StencilRef: 0
-    - _StencilRefDepth: 0
+    - _StencilRefDepth: 8
     - _StencilRefDistortionVec: 4
-    - _StencilRefGBuffer: 2
-    - _StencilRefMV: 32
+    - _StencilRefGBuffer: 10
+    - _StencilRefMV: 40
     - _StencilWriteMask: 6
     - _StencilWriteMaskDepth: 9
     - _StencilWriteMaskDistortionVec: 4

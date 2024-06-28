@@ -30,7 +30,6 @@ Material:
   m_ValidKeywords:
   - _DISABLE_DECALS
   - _DISABLE_SSR
-  - _DISABLE_SSR_TRANSPARENT
   - _ENABLE_FOG_ON_TRANSPARENT
   - _ENUM_LAYERCOUNT_DECAL02
   - _SURFACE_TYPE_TRANSPARENT
@@ -64,11 +63,10 @@ Material:
     RenderType: Transparent
   disabledShaderPasses:
   - Distortion
-  - TransparentDepthPrepass
+  - RayTracingPrepass
   - TransparentDepthPostpass
   - TransparentBackface
   - MOTIONVECTORS
-  - RayTracingPrepass
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -99,7 +97,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 2800000, guid: bac8a3f60c66d264dbff44e8fbd73857, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 1, y: 2}
         m_Offset: {x: 0, y: 0}
     - _BlendMask:
         m_Texture: {fileID: 0}
@@ -107,8 +105,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _DecalLayer_G_BaseMap:
         m_Texture: {fileID: 2800000, guid: 8f781ce53edb13542b8f45492f530a22, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Scale: {x: 1, y: -1}
+        m_Offset: {x: 0.14, y: 0.05}
     - _DecalLayer_R_BaseMap:
         m_Texture: {fileID: 2800000, guid: f7de3959e9869f049a5f7f5329f9508a, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -229,7 +227,8 @@ Material:
     - _CustomOption2: 0
     - _DecalLayer_G_AffectBaseColor: 1
     - _DecalLayer_G_AffectRoughness: 1
-    - _DecalLayer_G_MaskIntensity: 1
+    - _DecalLayer_G_MaskContrast: 6.05
+    - _DecalLayer_G_MaskIntensity: 0.67
     - _DecalLayer_R_AffectAmbientOcclusion: 0
     - _DecalLayer_R_AffectBaseColor: 1
     - _DecalLayer_R_AffectMetal: 0
@@ -237,6 +236,8 @@ Material:
     - _DecalLayer_R_AffectOpacity: 0
     - _DecalLayer_R_AffectRoughness: 1
     - _DecalLayer_R_MaskIntensity: 1
+    - _DecalLayer_R_Roughness: 0.206
+    - _DecalLayer_R_Roughness_1: 0.712
     - _Deferred: 1
     - _DetailLayer_DetailIntensity: 1
     - _DetailLayer_DetailNormalScale: 0.3
@@ -252,10 +253,11 @@ Material:
     - _ENUM_LAYERCOUNT: 1
     - _RayTracing: 0
     - _ReceivesSSR: 0
+    - _Roughness: 0.356
     - _StencilRef: 0
-    - _StencilRefDepth: 0
-    - _StencilRefGBuffer: 2
-    - _StencilRefMV: 32
+    - _StencilRefDepth: 8
+    - _StencilRefGBuffer: 10
+    - _StencilRefMV: 40
     - _SupportDecal: 0
     - _SupportDecals: 0
     - _SurfaceType: 1
@@ -305,8 +307,9 @@ Material:
     m_Colors:
     - _AdditionalLayer_BaseColor: {r: 2.9960787, g: 2.9960787, b: 2.9960787, a: 1}
     - _AdditionalLayer_Color: {r: 1, g: 0.827044, b: 0.827044, a: 1}
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 0.74509805}
-    - _Color: {r: 1, g: 1, b: 1, a: 0.74509805}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 0.34117648}
+    - _Color: {r: 1, g: 1, b: 1, a: 0.34117648}
+    - _DecalLayer_R_BaseColor: {r: 1, g: 1, b: 1, a: 0.4392157}
     - _DetailLayer_HexTilingInfo: {r: 2.26, g: 0.456, b: 10, a: 0.2}
     - _TilingLayer_BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _TilingLayer_G_BaseColor: {r: 1, g: 1, b: 1, a: 1}

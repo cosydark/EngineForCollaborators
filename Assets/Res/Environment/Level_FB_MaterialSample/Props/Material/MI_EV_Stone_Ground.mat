@@ -13,7 +13,9 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _DISABLE_SSR_TRANSPARENT
+  - _ENUM_MODEL_DEFAULTLIT
   m_InvalidKeywords:
+  - _ENUM_MODEL_DEFAULT
   - _NORMALMAP_TANGENT_SPACE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -43,9 +45,23 @@ Material:
         m_Texture: {fileID: 2800000, guid: 00da6a26f7ce4c34bb908e2cb20a5a50, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _UVDecal_BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _UVDecal_MaskMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
-    m_Floats: []
-    m_Colors: []
+    m_Floats:
+    - _ENUM_MODEL: 0
+    - _Roughness: 1
+    - _UVDecal_Metallic: 0.007
+    - _UVDecal_NormalScale: 1
+    - _UVDecal_Roughness: 1
+    m_Colors:
+    - _UVDecal_BaseColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &944734705938752261
 MonoBehaviour:

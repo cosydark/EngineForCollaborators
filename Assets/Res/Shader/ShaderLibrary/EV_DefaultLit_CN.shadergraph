@@ -81,12 +81,6 @@
             "m_Id": "213b5afdf0d2465cb03d2aa74be8af44"
         },
         {
-            "m_Id": "a9766b9e75e94d589c6729d7dd76f1ef"
-        },
-        {
-            "m_Id": "901de48534a446809e94072365156eaa"
-        },
-        {
             "m_Id": "93c025e7255a41b6b3861227ae5fdb6d"
         }
     ],
@@ -1580,6 +1574,27 @@
         },
         {
             "m_Id": "b43e80622ed84acd9b9264b32a231408"
+        },
+        {
+            "m_Id": "d502f14254ad472fb45a3e8344a42301"
+        },
+        {
+            "m_Id": "14ac89895ad24c96b048639c5cdeb0b4"
+        },
+        {
+            "m_Id": "6d4b56623f3647ce819924cbc3992e1e"
+        },
+        {
+            "m_Id": "126ae14b0f094e7fa52a61aae0dd12dd"
+        },
+        {
+            "m_Id": "137d752e3e43434298db76afa7afc1a9"
+        },
+        {
+            "m_Id": "c33b9a8e32534142a32c5ab7f4e3a5c2"
+        },
+        {
+            "m_Id": "f02f671dd8c44389b11e4ce81d189c62"
         }
     ]
 }
@@ -1991,7 +2006,7 @@
     "isMainTexture": false,
     "useTilingAndOffset": false,
     "m_Modifiable": true,
-    "m_DefaultType": 0
+    "m_DefaultType": 1
 }
 
 {
@@ -3446,21 +3461,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
-    "m_ObjectId": "901de48534a446809e94072365156eaa",
-    "m_Name": "▶ Emissive Layer ◀",
-    "m_ChildObjectList": [
-        {
-            "m_Id": "c33b9a8e32534142a32c5ab7f4e3a5c2"
-        },
-        {
-            "m_Id": "f02f671dd8c44389b11e4ce81d189c62"
-        }
-    ]
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "924a1afaf6d24a0c9ee73e25a2f3ffef",
     "m_Id": 5,
@@ -3785,30 +3785,6 @@
         "m_Guid": ""
     },
     "m_DefaultType": 0
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
-    "m_ObjectId": "a9766b9e75e94d589c6729d7dd76f1ef",
-    "m_Name": "▶ PBR Layer ◀",
-    "m_ChildObjectList": [
-        {
-            "m_Id": "d502f14254ad472fb45a3e8344a42301"
-        },
-        {
-            "m_Id": "14ac89895ad24c96b048639c5cdeb0b4"
-        },
-        {
-            "m_Id": "6d4b56623f3647ce819924cbc3992e1e"
-        },
-        {
-            "m_Id": "126ae14b0f094e7fa52a61aae0dd12dd"
-        },
-        {
-            "m_Id": "137d752e3e43434298db76afa7afc1a9"
-        }
-    ]
 }
 
 {

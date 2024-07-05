@@ -50,7 +50,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseLayer_MaskMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 26ac739cf183bcb488eb820b21323bef, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseLayer_NormalMap:
@@ -232,6 +232,8 @@ Material:
     - _Anisotropic_Layer: 0
     - _Anisotropy: 0
     - _BOOLEAN: 0
+    - _BaseLayer_AlbedoGrayValue: 1
+    - _BaseLayer_AmbientOcclusion: 1
     - _BaseLayer_NormalScale: 1
     - _BlendMode: 0
     - _Boolean: 0
@@ -344,6 +346,10 @@ Material:
     - _ThinFilmFactor: 1
     - _ThinFilmThickness: 0.27
     - _ThinFilm_Layer: 0
+    - _TilingLayer_BlendHeightScale: 0.3333
+    - _TilingLayer_BlendHeightShift: -0.3333
+    - _TilingLayer_G_BlendHeightScale: 0.3333
+    - _TilingLayer_G_BlendHeightShift: 0.3333
     - _TilingLayer_G_BlendMode: 1
     - _TilingLayer_G_BlendRadius: 0.1
     - _TilingLayer_G_HeightOffset: 0
@@ -361,7 +367,9 @@ Material:
     - _TilingLayer_MatchScaling: 1
     - _TilingLayer_NormalScale: 1
     - _TilingLayer_Porosity: 0
-    - _TilingLayer_R_BlendMode: 1
+    - _TilingLayer_R_BlendHeightScale: 0.3333
+    - _TilingLayer_R_BlendHeightShift: 0
+    - _TilingLayer_R_BlendMode: 0
     - _TilingLayer_R_BlendRadius: 0.1
     - _TilingLayer_R_HeightOffset: 0
     - _TilingLayer_R_HexTiling: 0
@@ -388,8 +396,10 @@ Material:
     - _UVBase: 0
     - _UVDetail: 0
     - _UVEmissive: 0
+    - _UseBaseLayer: 0
     - _UseEmissiveIntensity: 0
     - _UseShadowThreshold: 0
+    - _UseVertexColor: 1
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
@@ -410,7 +420,9 @@ Material:
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _TilingLayer_BaseColor: {r: 1, g: 1, b: 1, a: 0}
     - _TilingLayer_G_BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TilingLayer_G_MaskContrastAndIntensity: {r: 1, g: 1, b: 0, a: 0}
     - _TilingLayer_R_BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TilingLayer_R_MaskContrastAndIntensity: {r: 1, g: 1, b: 0, a: 0}
     - _TransmittanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}

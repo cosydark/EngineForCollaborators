@@ -8,11 +8,11 @@
 void DecalLayerR_float(
                         float BlendMask,
                         float2 DecalLayer_R_BaseMapUV,
-                        UnityTexture2D _DecalLayer_R_BaseMap,
+                        Texture2D _DecalLayer_R_BaseMap,
                         float4 _DecalLayer_R_BaseColor,
-                        UnityTexture2D _DecalLayer_R_NormalMap,
+                        Texture2D _DecalLayer_R_NormalMap,
                         float _DecalLayer_R_NormalScale,
-                        UnityTexture2D _DecalLayer_R_MaskMap,
+                        Texture2D _DecalLayer_R_MaskMap,
                         float _DecalLayer_R_Metallic,
                         float _DecalLayer_R_Occlusion,
                         float _DecalLayer_R_Roughness,
@@ -45,21 +45,21 @@ void DecalLayerR_float(
 {
     // MInput---------------
     MInputType MInput;
-    MInput.Base_Color                  = Base_Color;
-    MInput.Base_Opacity                = Base_Opacity;
-    MInput.TangentSpaceNormal_NormalTS = TangentSpaceNormal_NormalTS;
-    MInput.Base_Metallic               = Base_Metallic;
-    MInput.AO_AmbientOcclusion         = AO_AmbientOcclusion;
-    MInput.Detail_Height               = Detail_Height;
-    MInput.Base_Roughness              = Base_Roughness;
-    MInput.Specular_Reflectance        = Specular_Reflectance;
+    MInput.Base.Color                  = Base_Color;
+    MInput.Base.Opacity                = Base_Opacity;
+    MInput.TangentSpaceNormal.NormalTS = TangentSpaceNormal_NormalTS;
+    MInput.Base.Metallic               = Base_Metallic;
+    MInput.AO.AmbientOcclusion         = AO_AmbientOcclusion;
+    MInput.Detail.Height               = Detail_Height;
+    MInput.Base.Roughness              = Base_Roughness;
+    MInput.Specular.Reflectance        = Specular_Reflectance;
     // MInput---------------
     DecalLayer SMLayerDecal01;
-    SetupDecalLayer(_DecalLayer_R_BaseMap.tex,
+    SetupDecalLayer(_DecalLayer_R_BaseMap,
                     _DecalLayer_R_BaseColor,
-                    _DecalLayer_R_NormalMap.tex,
+                    _DecalLayer_R_NormalMap,
                     _DecalLayer_R_NormalScale,
-                    _DecalLayer_R_MaskMap.tex,
+                    _DecalLayer_R_MaskMap,
                     _DecalLayer_R_Metallic,
                     _DecalLayer_R_Occlusion,
                     _DecalLayer_R_Roughness,
@@ -77,27 +77,27 @@ void DecalLayerR_float(
                      SMToggleDecal01);
     WithDecal(SMLayerDecal01,SMToggleDecal01,DecalLayer_R_BaseMapUV,MInput);
     // MInput-Out-----------
-    Out_Base_Color                  = MInput.Base_Color;
-    Out_Base_Opacity                 = MInput.Base_Opacity;
-    Out_TangentSpaceNormal_NormalTS = MInput.TangentSpaceNormal_NormalTS;
-    Out_Base_Metallic               = MInput.Base_Metallic;
-    Out_AO_AmbientOcclusion         = MInput.AO_AmbientOcclusion;
-    Out_Detail_Height               = MInput.Detail_Height;
-    Out_Base_Roughness              = MInput.Base_Roughness;
-    Out_Specular_Reflectance        = MInput.Specular_Reflectance;
+    Out_Base_Color                  = MInput.Base.Color;
+    Out_Base_Opacity                 = MInput.Base.Opacity;
+    Out_TangentSpaceNormal_NormalTS = MInput.TangentSpaceNormal.NormalTS;
+    Out_Base_Metallic               = MInput.Base.Metallic;
+    Out_AO_AmbientOcclusion         = MInput.AO.AmbientOcclusion;
+    Out_Detail_Height               = MInput.Detail.Height;
+    Out_Base_Roughness              = MInput.Base.Roughness;
+    Out_Specular_Reflectance        = MInput.Specular.Reflectance;
     // MInput-Out-----------
     
 }
 
 
-void DecalLayerG_float(bool IF_RUN_G,
+void DecalLayerG_float( bool IF_RUN_G,
                         float BlendMask,
                         float2 DecalLayer_G_BaseMapUV,
-                        UnityTexture2D _DecalLayer_G_BaseMap,
+                        Texture2D _DecalLayer_G_BaseMap,
                         float4 _DecalLayer_G_BaseColor,
-                        UnityTexture2D _DecalLayer_G_NormalMap,
+                        Texture2D _DecalLayer_G_NormalMap,
                         float _DecalLayer_G_NormalScale,
-                        UnityTexture2D _DecalLayer_G_MaskMap,
+                        Texture2D _DecalLayer_G_MaskMap,
                         float _DecalLayer_G_Metallic,
                         float _DecalLayer_G_Occlusion,
                         float _DecalLayer_G_Roughness,
@@ -130,23 +130,23 @@ void DecalLayerG_float(bool IF_RUN_G,
 {
     // MInput---------------
     MInputType MInput;
-    MInput.Base_Color                  = Base_Color;
-    MInput.Base_Opacity                  = Base_Opacity;
-    MInput.TangentSpaceNormal_NormalTS = TangentSpaceNormal_NormalTS;
-    MInput.Base_Metallic               = Base_Metallic;
-    MInput.AO_AmbientOcclusion         = AO_AmbientOcclusion;
-    MInput.Detail_Height               = Detail_Height;
-    MInput.Base_Roughness              = Base_Roughness;
-    MInput.Specular_Reflectance        = Specular_Reflectance;
+    MInput.Base.Color                  = Base_Color;
+    MInput.Base.Opacity                  = Base_Opacity;
+    MInput.TangentSpaceNormal.NormalTS = TangentSpaceNormal_NormalTS;
+    MInput.Base.Metallic               = Base_Metallic;
+    MInput.AO.AmbientOcclusion         = AO_AmbientOcclusion;
+    MInput.Detail.Height               = Detail_Height;
+    MInput.Base.Roughness              = Base_Roughness;
+    MInput.Specular.Reflectance        = Specular_Reflectance;
     // MInput---------------
     if (IF_RUN_G)
     {
         DecalLayer SMLayerDecal02;
-        SetupDecalLayer(_DecalLayer_G_BaseMap.tex,
+        SetupDecalLayer(_DecalLayer_G_BaseMap,
                         _DecalLayer_G_BaseColor,
-                        _DecalLayer_G_NormalMap.tex,
+                        _DecalLayer_G_NormalMap,
                         _DecalLayer_G_NormalScale,
-                        _DecalLayer_G_MaskMap.tex,
+                        _DecalLayer_G_MaskMap,
                         _DecalLayer_G_Metallic,
                         _DecalLayer_G_Occlusion,
                         _DecalLayer_G_Roughness,
@@ -167,14 +167,14 @@ void DecalLayerG_float(bool IF_RUN_G,
     }
 
     // MInput-Out-----------
-    Out_Base_Color                  = MInput.Base_Color;
-    Out_Base_Opacity               = MInput.Base_Opacity;
-    Out_TangentSpaceNormal_NormalTS = MInput.TangentSpaceNormal_NormalTS;
-    Out_Base_Metallic               = MInput.Base_Metallic;
-    Out_AO_AmbientOcclusion         = MInput.AO_AmbientOcclusion;
-    Out_Detail_Height               = MInput.Detail_Height;
-    Out_Base_Roughness              = MInput.Base_Roughness;
-    Out_Specular_Reflectance        = MInput.Specular_Reflectance;
+    Out_Base_Color                  = MInput.Base.Color;
+    Out_Base_Opacity               = MInput.Base.Opacity;
+    Out_TangentSpaceNormal_NormalTS = MInput.TangentSpaceNormal.NormalTS;
+    Out_Base_Metallic               = MInput.Base.Metallic;
+    Out_AO_AmbientOcclusion         = MInput.AO.AmbientOcclusion;
+    Out_Detail_Height               = MInput.Detail.Height;
+    Out_Base_Roughness              = MInput.Base.Roughness;
+    Out_Specular_Reflectance        = MInput.Specular.Reflectance;
     // MInput-Out-----------
     
 }

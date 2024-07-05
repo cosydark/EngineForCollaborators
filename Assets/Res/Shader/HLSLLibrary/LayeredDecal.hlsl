@@ -24,11 +24,11 @@ struct DecalMaterialLayer
 
 struct DecalLayer
 {
-    Texture2D<float4> BaseMap;
+    Texture2D BaseMap;
     float4 BaseColor;
-    Texture2D<float4> NormalMap;
+    Texture2D NormalMap;
     float NormalScale;
-    Texture2D<float4> MaskMap;
+    Texture2D MaskMap;
     float Metallic;
     float AmbientOcclusion;
     float Roughness; 
@@ -81,21 +81,21 @@ void WithDecal(DecalLayer SMLayer, DecalToggle SMToggle, float2 Coordinate, inou
     DecalMaterialLayer DMLayer;
     SetupDecalMaterialLayer(BaseColor,NormalTS,mask,SMLayer.Reflectance,DecalBlend,DMLayer);
 
-    MInput.Base_Color = lerp(MInput.Base_Color,DMLayer.BaseColor.rgb,DMLayer.Blend*SMToggle.BaseColorToggle);
-    MInput.Base_Opacity = lerp(MInput.Base_Opacity,DMLayer.BaseColor.a,DMLayer.Blend*SMToggle.OpacityToggle);
-    MInput.Base_Metallic = lerp(MInput.Base_Metallic,DMLayer.Mask.r,DMLayer.Blend*SMToggle.MetalToggle);
-    MInput.Base_Roughness = lerp(MInput.Base_Roughness,DMLayer.Mask.a,DMLayer.Blend*SMToggle.RoughnessToggle);
+    MInput.Base.Color = lerp(MInput.Base.Color,DMLayer.BaseColor.rgb,DMLayer.Blend*SMToggle.BaseColorToggle);
+    MInput.Base.Opacity = lerp(MInput.Base.Opacity,DMLayer.BaseColor.a,DMLayer.Blend*SMToggle.OpacityToggle);
+    MInput.Base.Metallic = lerp(MInput.Base.Metallic,DMLayer.Mask.r,DMLayer.Blend*SMToggle.MetalToggle);
+    MInput.Base.Roughness = lerp(MInput.Base.Roughness,DMLayer.Mask.a,DMLayer.Blend*SMToggle.RoughnessToggle);
 
-    MInput.AO_AmbientOcclusion = lerp(MInput.AO_AmbientOcclusion,DMLayer.Mask.g,DMLayer.Blend*SMToggle.AmbientOcclusionToggle);
-    MInput.TangentSpaceNormal_NormalTS = lerp(MInput.TangentSpaceNormal_NormalTS,DMLayer.NormalTS,DMLayer.Blend*SMToggle.NormalToggle);
-    MInput.Specular_Reflectance = lerp(MInput.Specular_Reflectance,DMLayer.Reflectance,DMLayer.Blend*SMToggle.Reflectance);
+    MInput.AO.AmbientOcclusion = lerp(MInput.AO.AmbientOcclusion,DMLayer.Mask.g,DMLayer.Blend*SMToggle.AmbientOcclusionToggle);
+    MInput.TangentSpaceNormal.NormalTS = lerp(MInput.TangentSpaceNormal.NormalTS,DMLayer.NormalTS,DMLayer.Blend*SMToggle.NormalToggle);
+    MInput.Specular.Reflectance = lerp(MInput.Specular.Reflectance,DMLayer.Reflectance,DMLayer.Blend*SMToggle.Reflectance);
 }
 
-void SetupDecalLayer(   Texture2D<float4> BaseMap,
+void SetupDecalLayer(   Texture2D BaseMap,
                         float4 BaseColor,
-                        Texture2D<float4> NormalMap,
+                        Texture2D NormalMap,
                         float NormalScale,
-                        Texture2D<float4> MaskMap,
+                        Texture2D MaskMap,
                         float Metallic,
                         float AmbientOcclusion,
                         float Roughness,

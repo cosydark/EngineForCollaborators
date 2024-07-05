@@ -2,6 +2,7 @@
 #define XRENDER_COMMON_ANTI_TILLING_HLSL
 
 #include "Common.hlsl"
+#include "CustomData.hlsl"
 
 // Output: weights associated with each hex tile and integer centers
 void TriangleGrid(out float3 Weights,
@@ -107,13 +108,13 @@ void BaryWeightBlend(inout float3 Weights, float4 c1, float4 c2, float4 c3, floa
 /// HexRotation => (-20, 20); HexContrast => (0.001, 0.999); HexExp => (0, 20); HexGain => (0.001, 0.999)
 /// </summary>
 /// <returns></returns>
-float4 SampleTexture2DHex(      Texture2D Map,
-                                SamplerState Sampler,
-                                float2 Coordinate,
-                                float HexRotation = 0,
-                                float HexContrast = 0.456,
-                                float HexExp = 10,
-                                float HexGain = 0.2
+float4 SampleTexture2DHex(  Texture2D Map,
+                            SamplerState Sampler,
+                            float2 Coordinate,
+                            float HexRotation = 0,
+                            float HexContrast = 0.456,
+                            float HexExp = 10,
+                            float HexGain = 0.2
                           )
 {
     float4 V = float4(0, 0, 0, 0);
@@ -142,53 +143,6 @@ float3 TransformVectorTSToVectorWS_RowMajor(float3 VecTS, float3x3 TangentToWorl
 
     return V;
 }
-
-// material input struct
-struct FSlabParams_MInput
-{
-    // Always needed
-    // AO;
-    float AO_AmbientOcclusion;
-    
-    // FSlabParams_CustomTBN CustomTBN;
-    // FSlabParams_TangentMap TangentMap;
-    // FSlabParams_TangentSpaceNormal TangentSpaceNormal;
-    float3 TangentSpaceNormal_NormalTS;
-    // FSlabParams_Decal Decal;
-    // FSlabParams_PluginChannelData PluginChannelData;
-    // FSlabParams_TerrainBlend TerrainBlend;
-    // Base;
-    float3 Base_Color;
-    float Base_Opacity;
-    float Base_Metallic;
-    float Base_Roughness;
-    
-    // FSlabParams_Generic Generic;
-    // FSlabParams_Geometry Geometry;
-    
-    // Specular;
-    float Specular_Reflectance;
-    
-    // Slab feature params
-    // FSlabParams_Emission Emission;
-
-    // Material feature params
-    // Detail;
-    float Detail_Height;
-    
-    // Material feature & slab feature params
-
-    // ================================================================================
-    // // just for debug
-    // #if defined(USE_DEBUG_MODE) || defined(_USE_DEBUG_MODE_DEFERRED)
-    // FSlabParams_DecalDebug  DecalDebug;
-    // FDebugCustomData        DebugCustomData;
-    // #endif
-    // ================================================================================
-
-};
-
-#define MInputType FSlabParams_MInput
 
 #define SAMPLE_TEXTURE2D_HEX(textureName, samplerName, coord2) SampleTexture2DHex(textureName, samplerName, coord2)
 

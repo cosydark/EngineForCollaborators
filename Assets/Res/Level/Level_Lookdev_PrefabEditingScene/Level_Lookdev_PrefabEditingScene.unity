@@ -1962,7 +1962,7 @@ PrefabInstance:
     - target: {fileID: 4822022863970820576, guid: f76b9f87a8b66e9459d09d579f45ce39, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 878153aeef1d4a94585d4b0cf7818641, type: 2}
+      objectReference: {fileID: 2100000, guid: c6b6747b6ae355b4fab18207f4c9035b, type: 2}
     - target: {fileID: 8201772491502166466, guid: f76b9f87a8b66e9459d09d579f45ce39, type: 3}
       propertyPath: m_Name
       value: Prefab_LVMaterialSample_Rock_0

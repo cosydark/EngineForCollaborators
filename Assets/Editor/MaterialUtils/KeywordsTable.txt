@@ -1,0 +1,8 @@
+_ENUM_LAYERCOUNT @ 0 @ MATERIAL_ENUM_LAYERCOUNT_TILING              @ CustomEnum     @ 0 @ LayeredRock
+_ENUM_LAYERCOUNT @ 1 @ MATERIAL_ENUM_LAYERCOUNT_TILINGR             @ CustomEnum     @ 1 @ LayeredRock
+_ENUM_LAYERCOUNT @ 2 @ MATERIAL_ENUM_LAYERCOUNT_TILINGRG            @ CustomEnum     @ 2 @ LayeredRock
+_ENUM_LAYERCOUNT @ 3 @ MATERIAL_ENUM_LAYERCOUNT_TILING_WITHTOPPING  @ CustomEnum     @ 3 @ LayeredRock
+_ENUM_LAYERCOUNT @ 4 @ MATERIAL_ENUM_LAYERCOUNT_TILINGR_WITHTOPPING @ CustomEnum     @ 4 @ LayeredRock
+_UseVertexColor  @ 1 @ MATERIAL_USE_CUSTOM_OPTION0                  @ _CustomOption0 @ 1 @ LayeredRock
+_UseBaseLayer    @ 1 @ MATERIAL_USE_CUSTOM_OPTION1                  @ _CustomOption1 @ 1 @ LayeredRock
+_UseDetailLayer  @ 1 @ MATERIAL_USE_CUSTOM_OPTION2                  @ _CustomOption2 @ 1 @ LayeredRock

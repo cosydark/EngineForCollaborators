@@ -24,38 +24,19 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MI_EV_LayeredRock
-  m_Shader: {fileID: -6465566751694194690, guid: 0935454d8de76cc4ab4a6ece171a9d25, type: 3}
-  m_Parent: {fileID: 2100000, guid: 933494291510d7e4a81c244ffc809dc3, type: 2}
-  m_ModifiedSerializedProperties: 16
+  m_Shader: {fileID: -6465566751694194690, guid: 5ca1b500b4895814cb6bd669f0400d88, type: 3}
+  m_Parent: {fileID: 2100000, guid: 5b4830c752d2284458245a4ab9eb2efd, type: 2}
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _DISABLE_DECALS
   - _DISABLE_SSR
   - _DISABLE_SSR_TRANSPARENT
-  - _ENUM_LAYERCOUNT_TILINGR_WITHTOPPING
-  m_InvalidKeywords:
-  - MATERIAL_ENABLE_DEFERRED
-  - MATERIAL_ENUM_LAYERCOUNT_TILINGR_WITHTOPPING
-  - MATERIAL_RECEIVE_DECAL
-  - MATERIAL_USE_CUSTOM_OPTION0
-  - MATERIAL_USE_CUSTOM_OPTION1
-  - MATERIAL_USE_CUSTOM_OPTION2
-  - USE_PM_ADDITIONALLAYER
-  - USE_PM_DETAILLAYER
-  - USE_PM_TILINGLAYER
-  - USE_PM_TILINGLAYER_G
-  - USE_PM_TILINGLAYER_R
-  - USE_PM_TOPPINGLAYER
-  - _ADDITIONALLAYER_ENABLE_ON
-  - _DECALLAYER_LAYER1
-  - _TILINGLAYER_ENABLE_ON
-  - _TILINGLAYER_G_ENABLE_ON
-  - _TILINGLAYER_R_ENABLE_ON
-  - _TOPPINGLAYER_ENABLE_ON
-  - __TILING
+  - _ENUM_LAYERCOUNT_TILINGR
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: -1
   stringTagMap:
     MotionVector: User
   disabledShaderPasses:
@@ -69,44 +50,8 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _BaseLayer_DetailMap:
-        m_Texture: {fileID: 2800000, guid: c8218ad73e938af43be758645778f6c9, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BaseLayer_MaskMap:
-        m_Texture: {fileID: 2800000, guid: 26ac739cf183bcb488eb820b21323bef, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _BaseLayer_NormalMap:
         m_Texture: {fileID: 2800000, guid: dc330a3e17a837446a8887394eea7a90, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BaseLayer_Rock_DetailMap:
-        m_Texture: {fileID: 2800000, guid: c8218ad73e938af43be758645778f6c9, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BaseLayer_Rock_MaskMap:
-        m_Texture: {fileID: 2800000, guid: cf1dc4b9b32bc8f4fb812f9cd453dfd8, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BaseLayer_Rock_NormalMap:
-        m_Texture: {fileID: 2800000, guid: dc330a3e17a837446a8887394eea7a90, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _BlendMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailLayer_DetailMap:
-        m_Texture: {fileID: 2800000, guid: eb1629cfd216e634bb3821934ed773df, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailLayer_MaskMap:
-        m_Texture: {fileID: 2800000, guid: 356a3964af64e6840a534bf605a59f61, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailLayer_NormalMap:
-        m_Texture: {fileID: 2800000, guid: b67c22a9ea97c8c4bb5a1e2933ab0787, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Detail_BaseMap:
@@ -171,109 +116,46 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AdditionalLayer_AmbientOcclusion: 1
-    - _AdditionalLayer_BlendMode: 0
-    - _AdditionalLayer_BlendRadius: 0.1
-    - _AdditionalLayer_Enable: 1
     - _AdditionalLayer_Height: 0.802
-    - _AdditionalLayer_HeightOffset: 0.278
-    - _AdditionalLayer_HeightOverlay: 0
-    - _AdditionalLayer_MaskContrast: 1
-    - _AdditionalLayer_MaskIntensity: 1
-    - _AdditionalLayer_Metallic: 0
     - _AdditionalLayer_NormalScale: 0.3
-    - _AdditionalLayer_Reflectance: 0.5
     - _AdditionalLayer_Roughness: 1
-    - _AdditionalLayer_UVIndex: 0
     - _AdditionalLayer_UseHeightLerp: 1
-    - _BaseLayer_AlbedoGrayValue: 1
-    - _BaseLayer_AmbientOcclusion: 1
-    - _BaseLayer_DebugMask: 0
-    - _BaseLayer_DetailNormalScale: 1
-    - _BaseLayer_NormalScale: 1
-    - _BaseLayer_Rock_NormalScale: 1
-    - _CustomEnum: 4
-    - _CustomOption0: 1
-    - _CustomOption1: 1
-    - _CustomOption2: 0
-    - _Deferred: 1
-    - _DetailLayer_DetailIntensity: 1
-    - _DetailLayer_DetailNormalScale: 0.3
-    - _DetailLayer_Enable: 1
-    - _DetailLayer_MatchScaling_Detail: 1
-    - _DetailLayer_NormalScale: 1
-    - _DetailLayer_Tiling_Detail: 2.6516132
-    - _DetailLayer_UVIndex_Detail: 1
-    - _Detail_AlbedoGrayValue: 1
-    - _Detail_AmbientOcclusion: 1
-    - _Detail_MatchScaling: 0
-    - _Detail_NormalScale: 1
     - _Detail_Tiling: 5
-    - _ENUM_LAYERCOUNT: 4
-    - _RayTracing: 0
-    - _ReceivesSSR: 0
-    - _StencilRef: 0
-    - _StencilRefDepth: 0
-    - _StencilRefGBuffer: 2
-    - _StencilRefMV: 32
+    - _DoubleSidedNormalMode: 2
+    - _ENUM_LAYERCOUNT: 1
     - _SupportDecal: 0
-    - _SupportDecals: 0
-    - _TerrainBlendEnable: 0
     - _TilingLayer_BlendHeightScale: 0.25
     - _TilingLayer_BlendHeightShift: -0.375
     - _TilingLayer_G_BlendHeightScale: 0.25
-    - _TilingLayer_G_BlendMode: 1
-    - _TilingLayer_G_BlendMode_1: 0
     - _TilingLayer_G_BlendRadius: 0.01
-    - _TilingLayer_G_Enable: 1
     - _TilingLayer_G_HeightOffset: -0.577
     - _TilingLayer_G_MatchScaling: 1
     - _TilingLayer_G_Tiling: 2.6516132
-    - _TilingLayer_G_UVIndex: 1
     - _TilingLayer_G_Use2U: 1
-    - _TilingLayer_HeightOffset: 0
-    - _TilingLayer_HexTiling: 0
-    - _TilingLayer_MatchScaling: 1
-    - _TilingLayer_NormalScale: 1
     - _TilingLayer_R_BlendHeightScale: 0.25
     - _TilingLayer_R_BlendHeightShift: -0.125
     - _TilingLayer_R_BlendHeightShift_1: 0.125
     - _TilingLayer_R_BlendMode: 0
     - _TilingLayer_R_BlendRadius: 0.01
-    - _TilingLayer_R_Enable: 1
     - _TilingLayer_R_HeightOffset: 0.649
     - _TilingLayer_R_MatchScaling: 1
     - _TilingLayer_R_Tiling: 2.6516132
-    - _TilingLayer_R_UVIndex: 1
-    - _TilingLayer_R_Use2U: 0
     - _TilingLayer_Tiling: 2.6516132
-    - _TilingLayer_UVIndex: 1
     - _TilingLayer_Use2U: 1
     - _ToppingLayer_BlendHeightScale: 0.333
     - _ToppingLayer_BlendHeightShift: 0.265
-    - _ToppingLayer_BlendMode: 0
-    - _ToppingLayer_BlendRadius: 0.1
     - _ToppingLayer_Coverage: 0.364
-    - _ToppingLayer_Enable: 1
     - _ToppingLayer_HeightOffset: 0.235
-    - _ToppingLayer_HexTiling: 0
     - _ToppingLayer_MatchScaling: 1
     - _ToppingLayer_NormalIntensity: 1
-    - _ToppingLayer_NormalScale: 1
-    - _ToppingLayer_Reflectance: 0.5
     - _ToppingLayer_Spread: 0.456
     - _ToppingLayer_Tiling: 2.651613
-    - _ToppingLayer_UVIndex: 1
     - _ToppingLayer_Use2U: 1
-    - _ToppingLayer_UseHeightLerp: 0
     - _UseAdditionalLayer: 0
+    - _UseBaseLayer: 0
+    - _UseDetailLayer: 0
+    - _UseVertexColor: 1
     m_Colors:
     - _AdditionalLayer_BaseColor: {r: 5.3403144, g: 0, b: 0, a: 1}
-    - _AdditionalLayer_Color: {r: 1, g: 0.827044, b: 0.827044, a: 1}
-    - _DetailLayer_HexTilingInfo: {r: 2.26, g: 0.456, b: 10, a: 0.2}
     - _TilingLayer_BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _TilingLayer_G_BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _TilingLayer_R_BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _TilingLayer_R_MaskContrastAndIntensity: {r: 1, g: 1, b: 0, a: 0}
-    - _ToppingLayer_BaseColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

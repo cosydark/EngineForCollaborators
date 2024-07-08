@@ -215,6 +215,8 @@ void SetupMInput(inout MInputType MInput)
     MInput.Detail.Height = 0.5;
     MInput.Specular.Reflectance = 0.5;
     MInput.TangentSpaceNormal.NormalTS = float3(0, 0, 1);
+    MInput.Emission.Color = float3(0, 0, 0);
+    MInput.Emission.Luminance = 0;
 }
 
 #endif

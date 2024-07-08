@@ -89,6 +89,8 @@ void WithDecal(DecalLayer SMLayer, DecalToggle SMToggle, float2 Coordinate, inou
     MInput.AO.AmbientOcclusion = lerp(MInput.AO.AmbientOcclusion,DMLayer.Mask.g,DMLayer.Blend*SMToggle.AmbientOcclusionToggle);
     MInput.TangentSpaceNormal.NormalTS = lerp(MInput.TangentSpaceNormal.NormalTS,DMLayer.NormalTS,DMLayer.Blend*SMToggle.NormalToggle);
     MInput.Specular.Reflectance = lerp(MInput.Specular.Reflectance,DMLayer.Reflectance,DMLayer.Blend*SMToggle.Reflectance);
+    MInput.Emission.Color = float3(0, 0, 0);
+    MInput.Emission.Luminance = 0;
 }
 
 void SetupDecalLayer(   Texture2D BaseMap,

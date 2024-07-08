@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6361072794482422310
+--- !u!1001 &1336014746600006171
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -49,123 +49,34 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7359439553257533454, guid: f76722c51ab689346a270e826375bb7d, type: 3}
-      propertyPath: m_DynamicOccludee
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7359439553257533454, guid: f76722c51ab689346a270e826375bb7d, type: 3}
-      propertyPath: m_LightProbeUsage
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7359439553257533454, guid: f76722c51ab689346a270e826375bb7d, type: 3}
-      propertyPath: m_StaticShadowCaster
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -7359439553257533454, guid: f76722c51ab689346a270e826375bb7d, type: 3}
-      propertyPath: m_ReflectionProbeUsage
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7359439553257533454, guid: f76722c51ab689346a270e826375bb7d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4cfac488ad82bd94c9614a14abfcd089, type: 2}
-    - target: {fileID: -6765379390887869622, guid: f76722c51ab689346a270e826375bb7d, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 4cfac488ad82bd94c9614a14abfcd089, type: 2}
-    - target: {fileID: -6359111773152836646, guid: f76722c51ab689346a270e826375bb7d, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483646
-      objectReference: {fileID: 0}
-    - target: {fileID: -1423678696381172312, guid: f76722c51ab689346a270e826375bb7d, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483646
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: ab5e600ac6a895843ab4bddc2bc4be60, type: 2}
     - target: {fileID: 919132149155446097, guid: f76722c51ab689346a270e826375bb7d, type: 3}
       propertyPath: m_Name
       value: Prefab_LVIOT_Build_Column_012
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: f76722c51ab689346a270e826375bb7d, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 3801183662297928717, guid: f76722c51ab689346a270e826375bb7d, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3801183662297928717, guid: f76722c51ab689346a270e826375bb7d, type: 3}
-      propertyPath: m_DynamicOccludee
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3801183662297928717, guid: f76722c51ab689346a270e826375bb7d, type: 3}
-      propertyPath: m_LightProbeUsage
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3801183662297928717, guid: f76722c51ab689346a270e826375bb7d, type: 3}
-      propertyPath: m_StaticShadowCaster
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3801183662297928717, guid: f76722c51ab689346a270e826375bb7d, type: 3}
-      propertyPath: m_ReflectionProbeUsage
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299966485555034552, guid: f76722c51ab689346a270e826375bb7d, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 64
-      objectReference: {fileID: 0}
-    - target: {fileID: 4860884733252827142, guid: f76722c51ab689346a270e826375bb7d, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 6075566213435560999, guid: f76722c51ab689346a270e826375bb7d, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3801183662297928717, guid: f76722c51ab689346a270e826375bb7d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f76722c51ab689346a270e826375bb7d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 453816132055135026}
     - targetCorrespondingSourceObject: {fileID: -6359111773152836646, guid: f76722c51ab689346a270e826375bb7d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8298485053009379296}
+      addedObject: {fileID: 4725459739289563784}
   m_SourcePrefab: {fileID: 100100000, guid: f76722c51ab689346a270e826375bb7d, type: 3}
---- !u!1 &6090691683468152695 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f76722c51ab689346a270e826375bb7d, type: 3}
-  m_PrefabInstance: {fileID: 6361072794482422310}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &453816132055135026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6090691683468152695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33d9f8c4be1023d40ae67089d7bdc50d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  layer: 6
-  globalLayer: 0
-  isMissingPrefab: 0
-  saveIntoVegetationSystem: 1
-  storeInScene: 0
-  Ignore: 0
---- !u!1 &9221392408510345724 stripped
+--- !u!1 &3834146432198009281 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6359111773152836646, guid: f76722c51ab689346a270e826375bb7d, type: 3}
-  m_PrefabInstance: {fileID: 6361072794482422310}
+  m_PrefabInstance: {fileID: 1336014746600006171}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &8298485053009379296
+--- !u!64 &4725459739289563784
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9221392408510345724}
+  m_GameObject: {fileID: 3834146432198009281}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2

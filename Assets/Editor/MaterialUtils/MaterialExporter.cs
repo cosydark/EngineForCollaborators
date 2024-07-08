@@ -9,16 +9,6 @@ namespace Editor.MaterialUtils
 {
     public class MaterialExporter : EditorWindow
     {
-        // [MenuItem("场景工具/材质导出")]
-        // [MenuItem("TA/Material Exporter")]
-        // private static void OpenWindow()
-        // {
-        //     var window = ScriptableObject.CreateInstance<MaterialExporter>() as MaterialExporter;
-        //     window.minSize = new Vector2(200, 250);
-        //     window.maxSize = new Vector2(200, 300);
-        //     window.titleContent = new GUIContent("ARK Tools");
-        //     window.ShowUtility();
-        // }
         [MenuItem("Assets/XRender/Generate XRP Material")]
         private static void GenerateXrpMaterial()
         {
@@ -44,26 +34,6 @@ namespace Editor.MaterialUtils
             SaveToFile(materialNewShader, materialMaterialName,
                 materialPathInProject.Replace($"{materialMaterialName}.mat", ""));
         }
-        // private void OnGUI()
-        // {
-        //     EditorGUILayout.Space(7);
-        //     if (GUILayout.Button("Gen Material", GUILayout.Height(37)))
-        //     {
-        //         // string materialPathInProject = "Assets/Res/Environment/Level_FB_MaterialSample/Props/Material/MI_EV_LayeredRock.mat";
-        //         // string materialMaterialName = AssetDatabase.LoadAssetAtPath<Material>(materialPathInProject).name;
-        //         // string materialShaderName = AssetDatabase.LoadAssetAtPath<Material>(materialPathInProject).shader.name;
-        //         // string[] material = ReadFileInProject(materialPathInProject);
-        //         // string[] materialNoKeywords = CleanKeywords(material);
-        //         // string[] properties = FetchProperties(material);
-        //         // string[] k = Array.Empty<string>();
-        //         // string[] p = Array.Empty<string>();
-        //         // PropertiesToKeywords(properties, materialShaderName, ref k, ref p);
-        //         // string[] materialWithNewP = AddStringArrayToStringArray(materialNoKeywords, p, "    m_Floats:");
-        //         // string[] materialWithNewKP = AddStringArrayToStringArray(materialWithNewP, k, "  m_ValidKeywords:");
-        //         // string[] materialNewShader = ResetParentAndShader(materialWithNewKP);
-        //         // SaveToFile(materialNewShader, materialMaterialName);
-        //     }
-        // }
         
         private static string[] ResetParentAndShader(string[] strings)
         {

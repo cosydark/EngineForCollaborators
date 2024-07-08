@@ -27,6 +27,11 @@ struct SSpecular
     float Reflectance;
 };
 
+struct SEmission
+{
+    float3 Color;
+    float Luminance;
+};
 struct FPixelInput
 {
     float2 UV0;
@@ -41,6 +46,7 @@ struct FSlabParams_MInput
     SBase Base;
     STangentSpaceNormal TangentSpaceNormal;
     SDetail Detail;
+    SEmission Emission;
     SAO AO;
     SSpecular Specular;
 };

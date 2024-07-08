@@ -12,6 +12,8 @@ namespace Editor.MaterialUtils
             static void CreatLayeredRock() => CreateMaterialVariant("Assets/Res/Shader/MaterialLibrary/M_EV_LayeredRock.mat");
             [MenuItem("Assets/XRender/EV/Creat Layered Architecture")]
             static void CreatLayeredArchitecture() => CreateMaterialVariant("Assets/Res/Shader/MaterialLibrary/M_EV_LayeredArchitecture.mat");
+            [MenuItem("Assets/XRender/EV/Creat Layered Glass")]
+            static void CreatLayeredGlass() => CreateMaterialVariant("Assets/Res/Shader/MaterialLibrary/M_EV_LayeredGlass.mat");
             
             private static void CreateMaterialVariant(string parentMaterialPath)
             {

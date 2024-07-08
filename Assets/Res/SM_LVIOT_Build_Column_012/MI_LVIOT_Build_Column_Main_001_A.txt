@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MI_LVIOT_Build_Column_Main_001_A
+  m_Shader: {fileID: 4800000, guid: 5ca1b500b4895814cb6bd669f0400d88, type: 3}
+  m_Parent: {fileID: 2100000, guid: c6b6747b6ae355b4fab18207f4c9035b, type: 2}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  m_InvalidKeywords:
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  - TransparentDepthPostpass
+  - TransparentBackface
+  - RayTracingPrepass
+  - TransparentDepthPrepass
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 814ccd9bce4f4554a92f6eb4efa865cc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 2800000, guid: c351a2b5a6392d84496e714a75906fbd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Detail_MaskMap:
+        m_Texture: {fileID: 2800000, guid: 26ac739cf183bcb488eb820b21323bef, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskMap:
+        m_Texture: {fileID: 2800000, guid: f81b6a695f74ff144b2f8bda5fc5cbe5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: f9dcfeae101e9da4b8579e58d74b85eb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _DetailNormalScale: 0.5
+    - _DetailNormalTiling: 5
+    - _Detail_AlbedoGrayValue: 1
+    - _Detail_AmbientOcclusion: 1
+    - _ENUM_MODEL: 2
+    - _Luminance: 0
+    - _Metallic: 1
+    - _Roughness: 1
+    - _UVDecal_Metallic: 1
+    m_Colors:
+    - _BaseColor: {r: 1.8880861, g: 1.8880861, b: 1.8880861, a: 1}
+    - _Color: {r: 1.8880861, g: 1.8880861, b: 1.8880861, a: 1}
+  m_BuildTextureStacks: []
+--- !u!114 &4640316683330813989
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 13
+  hdPluginSubTargetMaterialVersions:
+    m_Keys: []
+    m_Values: 

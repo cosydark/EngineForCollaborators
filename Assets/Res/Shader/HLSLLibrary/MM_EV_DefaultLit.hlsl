@@ -50,7 +50,7 @@ void PrepareMaterialInput_New(FPixelInput PixelIn, DefaultLitProperties Properti
     float4 MaskMap = SAMPLE_TEXTURE2D(Properties.MaskMap, SamplerLinearRepeat, BaseMapUV);
     
     float4 BaseColor = BaseMap * Properties.BaseColor;
-    MInput.Base.Color = BaseColor.rgb;
+    MInput.Base.Color = saturate(BaseColor.rgb);
     MInput.Base.Opacity = BaseColor.a;
     MInput.Base.Metallic = GetMaterialMetallicFromMaskMap(MaskMap) * Properties.Metallic;
     MInput.Base.Roughness = GetPerceptualRoughnessFromMaskMap(MaskMap) * Properties.Roughness;

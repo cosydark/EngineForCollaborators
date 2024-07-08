@@ -8,17 +8,13 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MI_EV_LayeredArchitecture
-  m_Shader: {fileID: -6465566751694194690, guid: 62dbe28584764f949ba804ece97381e8, type: 3}
-  m_Parent: {fileID: 2100000, guid: c9633154d20b111428ad5b6233cfa1ee, type: 2}
+  m_Shader: {fileID: 4800000, guid: 6dcc4f7b954e5fa418873b4e8174a134, type: 3}
+  m_Parent: {fileID: 2100000, guid: 13c10dba5228ab744952ce27ffe43669, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _DISABLE_SSR_TRANSPARENT
-  - _ENUM_LAYERCOUNT_TILINGRG
+  - MATERIAL_ENUM_LAYERCOUNT_TILINGRG
+  - MATERIAL_USE_CUSTOM_OPTION1
   m_InvalidKeywords:
-  - _DECALLAYER_LAYER1
-  - _DECALLAYER__DECALLAYER
-  - _ENUM_A
-  - _NORMALMAP_TANGENT_SPACE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -81,6 +77,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _CustomEnum: 2
+    - _CustomOption2: 1
     - _ENUM_LAYERCOUNT: 2
     - _TilingLayer_BlendHeightScale: 0.4
     - _TilingLayer_BlendHeightShift: -0.23

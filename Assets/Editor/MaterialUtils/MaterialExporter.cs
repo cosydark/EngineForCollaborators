@@ -40,14 +40,37 @@ namespace Editor.MaterialUtils
             List<string> r = new List<string>();
             for (int i = 0; i < strings.Length; i++)
             {
-                if (strings[i].Contains("m_Shader"))
+                // EV_LayeredRock
+                if (strings[i].Contains("m_Shader: {fileID: -6465566751694194690, guid: 5ca1b500b4895814cb6bd669f0400d88,"))
                 {
                     r.Add("  m_Shader: {fileID: 4800000, guid: 5ca1b500b4895814cb6bd669f0400d88, type: 3}");
                     continue;
                 }
-                if (strings[i].Contains("m_Parent"))
+                if (strings[i].Contains("m_Parent: {fileID: 2100000, guid: 5b4830c752d2284458245a4ab9eb2efd,"))
                 {
                     r.Add("  m_Parent: {fileID: 2100000, guid: c6b6747b6ae355b4fab18207f4c9035b, type: 2}");
+                    continue;
+                }
+                // EV_DefaultLit
+                if (strings[i].Contains("m_Shader: {fileID: -6465566751694194690, guid: 07cc19202cf610e4388c02c69d391f26"))
+                {
+                    r.Add("  m_Shader: {fileID: 4800000, guid: c632ce32b07348a4da3749475b4bfeab, type: 3}");
+                    continue;
+                }
+                if (strings[i].Contains("m_Parent: {fileID: 2100000, guid: 6ce19f9fd315dfe4fb44c900c8f80aee"))
+                {
+                    r.Add("  m_Parent: {fileID: 2100000, guid: bdbb6a24d73fb9d4e932fbd759d7e372, type: 2}");
+                    continue;
+                }
+                // EV_LayeredArchitecture
+                if (strings[i].Contains("m_Shader: {fileID: -6465566751694194690, guid: 62dbe28584764f949ba804ece97381e8"))
+                {
+                    r.Add("  m_Shader: {fileID: 4800000, guid: 6dcc4f7b954e5fa418873b4e8174a134, type: 3}");
+                    continue;
+                }
+                if (strings[i].Contains("m_Parent: {fileID: 2100000, guid: c9633154d20b111428ad5b6233cfa1ee"))
+                {
+                    r.Add("  m_Parent: {fileID: 2100000, guid: 13c10dba5228ab744952ce27ffe43669, type: 2}");
                     continue;
                 }
                 r.Add(strings[i]);

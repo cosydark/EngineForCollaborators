@@ -83,6 +83,18 @@
         },
         {
             "m_Id": "870971b873864f319e7d4802fd8d6faa"
+        },
+        {
+            "m_Id": "60201fd22d3f44a1ad7af3647435fc0a"
+        },
+        {
+            "m_Id": "9b26bc4aed6541b784cfe3cbc645ca23"
+        },
+        {
+            "m_Id": "d0d3b3a8a2f144c0a8264ab25773792f"
+        },
+        {
+            "m_Id": "6cf24655237d4e0dbea070bd2c2b054d"
         }
     ],
     "m_Keywords": [
@@ -243,6 +255,18 @@
         },
         {
             "m_Id": "4b0572dc3f3a4d14bc8bd537631ac71a"
+        },
+        {
+            "m_Id": "1654454216804add9ed54c655412a439"
+        },
+        {
+            "m_Id": "c6a483d676d94b2787cc1977b04c5c17"
+        },
+        {
+            "m_Id": "8a208122f31e4ff280ce10cd2ba5b60a"
+        },
+        {
+            "m_Id": "72c1aff6d9664d20af2952b36345f390"
         }
     ],
     "m_GroupDatas": [
@@ -298,6 +322,20 @@
                     "m_Id": "820f3ccd4ef140229e353b1216ef0805"
                 },
                 "m_SlotId": 20
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "1654454216804add9ed54c655412a439"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "820f3ccd4ef140229e353b1216ef0805"
+                },
+                "m_SlotId": 40
             }
         },
         {
@@ -443,6 +481,20 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+                    "m_Id": "72c1aff6d9664d20af2952b36345f390"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "820f3ccd4ef140229e353b1216ef0805"
+                },
+                "m_SlotId": 43
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
                     "m_Id": "75411aac375947019ba111252079ea15"
                 },
                 "m_SlotId": 0
@@ -583,6 +635,20 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+                    "m_Id": "8a208122f31e4ff280ce10cd2ba5b60a"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "820f3ccd4ef140229e353b1216ef0805"
+                },
+                "m_SlotId": 42
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
                     "m_Id": "8fa6cd22eef9450dad338cdef9141692"
                 },
                 "m_SlotId": 1
@@ -662,6 +728,20 @@
                     "m_Id": "820f3ccd4ef140229e353b1216ef0805"
                 },
                 "m_SlotId": 28
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "c6a483d676d94b2787cc1977b04c5c17"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "820f3ccd4ef140229e353b1216ef0805"
+                },
+                "m_SlotId": 41
             }
         },
         {
@@ -1294,6 +1374,42 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "1654454216804add9ed54c655412a439",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -53.9999885559082,
+            "y": 675.0,
+            "width": 122.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "80a6229cc1b141d0a4182eeb0f252e42"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "60201fd22d3f44a1ad7af3647435fc0a"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "1705f23e5588442ba6f3278c3b449416",
     "m_Id": 15,
@@ -1301,6 +1417,21 @@
     "m_SlotType": 0,
     "m_Hidden": false,
     "m_ShaderOutputName": "Metallic",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "19df0a52b6bd43a8940084726801f505",
+    "m_Id": 0,
+    "m_DisplayName": "贴花自发光强度",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
     "m_StageCapability": 3,
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
@@ -1670,6 +1801,21 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "26c87c55e04a40ff841d196deee7b2df",
+    "m_Id": 40,
+    "m_DisplayName": "UVDecal_OverrideNormal",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "UVDecal_OverrideNormal",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "2782469dacd34b41a1e040231e084ea5",
     "m_Id": 2,
     "m_DisplayName": "MMetallic",
@@ -1975,6 +2121,19 @@
         "w": 0.0
     },
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
+    "m_ObjectId": "3f6be20df1284713b8cb7a60dc067484",
+    "m_Id": 0,
+    "m_DisplayName": "贴花自发光贴图",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_BareResource": false
 }
 
 {
@@ -2650,6 +2809,29 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.BooleanShaderProperty",
+    "m_ObjectId": "60201fd22d3f44a1ad7af3647435fc0a",
+    "m_Guid": {
+        "m_GuidSerialized": "26a7eefc-94a1-48ae-be20-2e4d805999dd"
+    },
+    "m_Name": "贴花覆盖法线",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "贴花覆盖法线",
+    "m_DefaultReferenceName": "_",
+    "m_OverrideReferenceName": "_UVDecal_OverrideNormal",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": false
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "6422ef302e934435b193a4e166db4d4d",
     "m_Id": 0,
@@ -2745,6 +2927,34 @@
     },
     "m_Property": {
         "m_Id": "5538f825f14f466dbf7a7787e905c876"
+    }
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "6cf24655237d4e0dbea070bd2c2b054d",
+    "m_Guid": {
+        "m_GuidSerialized": "56888c48-a022-4db2-8002-4f262f9970cf"
+    },
+    "m_Name": "贴花自发光强度",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "贴花自发光强度",
+    "m_DefaultReferenceName": "__3",
+    "m_OverrideReferenceName": "_UVDecal_Luminance",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 1.0,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
     }
 }
 
@@ -2882,6 +3092,42 @@
     },
     "m_Property": {
         "m_Id": "6d4b56623f3647ce819924cbc3992e1e"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "72c1aff6d9664d20af2952b36345f390",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -113.0,
+            "y": 819.0000610351563,
+            "width": 152.99996948242188,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "19df0a52b6bd43a8940084726801f505"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "6cf24655237d4e0dbea070bd2c2b054d"
     }
 }
 
@@ -3092,6 +3338,35 @@
 }
 
 {
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "809301b560fe41e8ade8dde93f6b5078",
+    "m_Id": 43,
+    "m_DisplayName": "UVDecal_Luminance",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "UVDecal_Luminance",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.BooleanMaterialSlot",
+    "m_ObjectId": "80a6229cc1b141d0a4182eeb0f252e42",
+    "m_Id": 0,
+    "m_DisplayName": "贴花覆盖法线",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": false,
+    "m_DefaultValue": false
+}
+
+{
     "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.CustomFunctionNode",
     "m_ObjectId": "820f3ccd4ef140229e353b1216ef0805",
@@ -3110,6 +3385,30 @@
         }
     },
     "m_Slots": [
+        {
+            "m_Id": "2b1b8b1c68ab41408af3bdb19d25992e"
+        },
+        {
+            "m_Id": "4573e7e1d3e24a1aa3f1372689b8d2dd"
+        },
+        {
+            "m_Id": "2782469dacd34b41a1e040231e084ea5"
+        },
+        {
+            "m_Id": "5765d96d79bd4a87890f2bb1fad91375"
+        },
+        {
+            "m_Id": "51ae530282fe4fb0bff5ddcd026424b3"
+        },
+        {
+            "m_Id": "0151bf21bf9547f79e3010408d50a5da"
+        },
+        {
+            "m_Id": "12c1fd83d5d24fde9018476b0375bd8e"
+        },
+        {
+            "m_Id": "b2e7129207c44d9e9bb4c81d488d525b"
+        },
         {
             "m_Id": "1ad9f2d2367a4fd189c86c15fe3caae0"
         },
@@ -3186,6 +3485,9 @@
             "m_Id": "ad30be77872e4977a3078d1b1fe4cee0"
         },
         {
+            "m_Id": "26c87c55e04a40ff841d196deee7b2df"
+        },
+        {
             "m_Id": "7d935da4bfff4da2b3d0c549f184f543"
         },
         {
@@ -3193,6 +3495,15 @@
         },
         {
             "m_Id": "ee97f56041d949aaa66b923434b5a2fa"
+        },
+        {
+            "m_Id": "f8c2f7a1d1fc489583351a4db747994e"
+        },
+        {
+            "m_Id": "8b028ce6efab40069c788d3c0850798f"
+        },
+        {
+            "m_Id": "809301b560fe41e8ade8dde93f6b5078"
         },
         {
             "m_Id": "fcda2604b98944ce9834ef4b87092115"
@@ -3205,30 +3516,6 @@
         },
         {
             "m_Id": "caff9f81241c4c7c929dc6c1fa5a3a1b"
-        },
-        {
-            "m_Id": "2b1b8b1c68ab41408af3bdb19d25992e"
-        },
-        {
-            "m_Id": "4573e7e1d3e24a1aa3f1372689b8d2dd"
-        },
-        {
-            "m_Id": "2782469dacd34b41a1e040231e084ea5"
-        },
-        {
-            "m_Id": "5765d96d79bd4a87890f2bb1fad91375"
-        },
-        {
-            "m_Id": "51ae530282fe4fb0bff5ddcd026424b3"
-        },
-        {
-            "m_Id": "0151bf21bf9547f79e3010408d50a5da"
-        },
-        {
-            "m_Id": "12c1fd83d5d24fde9018476b0375bd8e"
-        },
-        {
-            "m_Id": "b2e7129207c44d9e9bb4c81d488d525b"
         }
     ],
     "synonyms": [
@@ -3522,6 +3809,42 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "8a208122f31e4ff280ce10cd2ba5b60a",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -91.99998474121094,
+            "y": 785.0,
+            "width": 155.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "c6d3b9b35f8b485696215eb9cb0ebfd5"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "d0d3b3a8a2f144c0a8264ab25773792f"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.GroupData",
     "m_ObjectId": "8abe9ac8a5dd492fa73f233b2a286ceb",
     "m_Title": "Base Layer",
@@ -3529,6 +3852,31 @@
         "x": -970.0,
         "y": -333.0
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
+    "m_ObjectId": "8b028ce6efab40069c788d3c0850798f",
+    "m_Id": 42,
+    "m_DisplayName": "UVDecal_EmissiveColor",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "UVDecal_EmissiveColor",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_Labels": []
 }
 
 {
@@ -3647,6 +3995,9 @@
             "m_Id": "ababa080bb3e416c8def778d62a1e71d"
         },
         {
+            "m_Id": "60201fd22d3f44a1ad7af3647435fc0a"
+        },
+        {
             "m_Id": "2a6d56179c47424f897f498f65e26c7c"
         },
         {
@@ -3654,6 +4005,15 @@
         },
         {
             "m_Id": "1c35d3f47712485f8e9571851b25966b"
+        },
+        {
+            "m_Id": "9b26bc4aed6541b784cfe3cbc645ca23"
+        },
+        {
+            "m_Id": "d0d3b3a8a2f144c0a8264ab25773792f"
+        },
+        {
+            "m_Id": "6cf24655237d4e0dbea070bd2c2b054d"
         },
         {
             "m_Id": "ce82110247124c31a1cb6ffae7934c6d"
@@ -3762,6 +4122,36 @@
         "e32": 0.0,
         "e33": 1.0
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty",
+    "m_ObjectId": "9b26bc4aed6541b784cfe3cbc645ca23",
+    "m_Guid": {
+        "m_GuidSerialized": "a4c8ddbe-1b5b-4703-bfe6-6580838e8ee8"
+    },
+    "m_Name": "贴花自发光贴图",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "贴花自发光贴图",
+    "m_DefaultReferenceName": "__1",
+    "m_OverrideReferenceName": "_UVDecal_EmissiveMap",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": {
+        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_Guid": ""
+    },
+    "isMainTexture": false,
+    "useTilingAndOffset": false,
+    "m_Modifiable": true,
+    "m_DefaultType": 0
 }
 
 {
@@ -4453,6 +4843,67 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "c6a483d676d94b2787cc1977b04c5c17",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -71.00001525878906,
+            "y": 751.0,
+            "width": 161.00003051757813,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "3f6be20df1284713b8cb7a60dc067484"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "9b26bc4aed6541b784cfe3cbc645ca23"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
+    "m_ObjectId": "c6d3b9b35f8b485696215eb9cb0ebfd5",
+    "m_Id": 0,
+    "m_DisplayName": "贴花自发光颜色",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "caff9f81241c4c7c929dc6c1fa5a3a1b",
     "m_Id": 37,
@@ -4573,6 +5024,36 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 3,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.ColorShaderProperty",
+    "m_ObjectId": "d0d3b3a8a2f144c0a8264ab25773792f",
+    "m_Guid": {
+        "m_GuidSerialized": "a0bc675c-ccaf-4d06-ad45-b6e96d4d3944"
+    },
+    "m_Name": "贴花自发光颜色",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "贴花自发光颜色",
+    "m_DefaultReferenceName": "__2",
+    "m_OverrideReferenceName": "_UVDecal_EmissiveColor",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+    },
+    "isMainColor": false,
+    "m_ColorMode": 1
 }
 
 {
@@ -5323,6 +5804,24 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Texture2DInputMaterialSlot",
+    "m_ObjectId": "f8c2f7a1d1fc489583351a4db747994e",
+    "m_Id": 41,
+    "m_DisplayName": "UVDecal_EmissiveMap",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "UVDecal_EmissiveMap",
+    "m_StageCapability": 3,
+    "m_BareResource": false,
+    "m_Texture": {
+        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_Guid": ""
+    },
+    "m_DefaultType": 0
 }
 
 {

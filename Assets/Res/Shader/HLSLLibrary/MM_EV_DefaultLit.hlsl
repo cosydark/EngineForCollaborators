@@ -34,9 +34,13 @@ struct DefaultLitProperties
 	// UV Decal
 	Texture2D UVDecal_BaseMap;
 	float4 UVDecal_BaseColor;
+	float UVDecal_OverrideNormal;
 	Texture2D UVDecal_NormalMap;
 	float UVDecal_NormalScale;
 	Texture2D UVDecal_MaskMap;
+	Texture2D UVDecal_EmissiveMap;
+	float4 UVDecal_EmissiveColor;
+	float UVDecal_Luminance;
 	float UVDecal_Metallic;
 	float UVDecal_Occlusion;
 	float UVDecal_Height;
@@ -67,18 +71,26 @@ void PrepareMaterialInput_New(FPixelInput PixelIn, DefaultLitProperties Properti
     // 2U Decal
 	if(abs(Properties.Model - 1) < FLT_EPS)
 	{
-		float2 Decal_UV = PixelIn.UV1;
+		float2 Decal_UV = saturate(PixelIn.UV1);
 		float4 Decal_BaseMap = SAMPLE_TEXTURE2D(Properties.UVDecal_BaseMap, SamplerTriLinearRepeat, Decal_UV);
+		float4 Decal_EmissiveMap = SAMPLE_TEXTURE2D(Properties.UVDecal_EmissiveMap, SamplerTriLinearRepeat, Decal_UV);
 		float4 Decal_MaskMap = SAMPLE_TEXTURE2D(Properties.UVDecal_MaskMap, SamplerLinearRepeat, Decal_UV);
 		float4 Decal_NormalMap = SAMPLE_TEXTURE2D(Properties.UVDecal_NormalMap, SamplerLinearRepeat, Decal_UV);
+		float3 Decal_Normal = GetNormalTSFromNormalTex(Decal_NormalMap, Properties.UVDecal_NormalScale);
 		float4 Decal_BaseColor = Decal_BaseMap * Properties.UVDecal_BaseColor;
+		float4 Decal_EmissiveColor = Decal_EmissiveMap * Properties.UVDecal_EmissiveColor;
 		float Decal_Alpha = Decal_BaseColor.a;
 		MInput.Base.Color = lerp(MInput.Base.Color, Decal_BaseColor.rgb, Decal_Alpha);
+		MInput.Emission.Color = lerp(MInput.Emission.Color, Decal_EmissiveColor.rgb, Decal_Alpha);
+		MInput.Emission.Luminance = lerp(MInput.Emission.Luminance, Properties.UVDecal_Luminance, Decal_Alpha);
 		MInput.Base.Metallic = lerp(MInput.Base.Metallic, GetMaterialMetallicFromMaskMap(Decal_MaskMap) * Properties.UVDecal_Metallic, Decal_Alpha);
 		MInput.Base.Roughness = lerp(MInput.Base.Roughness, GetPerceptualRoughnessFromMaskMap(Decal_MaskMap) * Properties.UVDecal_Roughness, Decal_Alpha);
 		MInput.AO.AmbientOcclusion = lerp(MInput.AO.AmbientOcclusion, LerpWhiteTo(GetMaterialAOFromMaskMap(Decal_MaskMap), Properties.UVDecal_Occlusion), Decal_Alpha);
 		MInput.Detail.Height = lerp(MInput.Detail.Height, ModifyHeight(GetHeightFromMaskMap(Decal_MaskMap), Properties.UVDecal_Height, 1), Decal_Alpha);
-		MInput.TangentSpaceNormal.NormalTS = lerp(MInput.TangentSpaceNormal.NormalTS, GetNormalTSFromNormalTex(Decal_NormalMap, Properties.UVDecal_NormalScale), Decal_Alpha);
+		float3 BlendNormal = lerp(  BlendAngelCorrectedNormals(MInput.TangentSpaceNormal.NormalTS, Decal_Normal),
+									lerp(MInput.TangentSpaceNormal.NormalTS, Decal_Normal, Decal_Alpha),
+									Properties.UVDecal_OverrideNormal);
+		MInput.TangentSpaceNormal.NormalTS = lerp(MInput.TangentSpaceNormal.NormalTS, BlendNormal, Decal_Alpha);
 	}
 	// Detail
 	if(abs(Properties.Model - 2) < FLT_EPS)
@@ -124,9 +136,13 @@ void DefaultLit_float(	// PixelIn And Something
 						// UV Decal
 						Texture2D UVDecal_BaseMap,
 						float4 UVDecal_BaseColor,
+						float UVDecal_OverrideNormal,
 						Texture2D UVDecal_NormalMap,
 						float UVDecal_NormalScale,
 						Texture2D UVDecal_MaskMap,
+						Texture2D UVDecal_EmissiveMap,
+						float4 UVDecal_EmissiveColor,
+						float UVDecal_Luminance,
 						float UVDecal_Metallic,
 						float UVDecal_Occlusion,
 						float UVDecal_Height,
@@ -170,9 +186,13 @@ void DefaultLit_float(	// PixelIn And Something
 	// UV Decal
 	Properties.UVDecal_BaseMap = UVDecal_BaseMap;
 	Properties.UVDecal_BaseColor = UVDecal_BaseColor;
+	Properties.UVDecal_OverrideNormal = UVDecal_OverrideNormal;
 	Properties.UVDecal_NormalMap = UVDecal_NormalMap;
 	Properties.UVDecal_NormalScale = UVDecal_NormalScale;
 	Properties.UVDecal_MaskMap = UVDecal_MaskMap;
+	Properties.UVDecal_EmissiveMap = UVDecal_EmissiveMap;
+	Properties.UVDecal_EmissiveColor = UVDecal_EmissiveColor;
+	Properties.UVDecal_Luminance = UVDecal_Luminance;
 	Properties.UVDecal_Metallic = UVDecal_Metallic;
 	Properties.UVDecal_Occlusion = UVDecal_Occlusion;
 	Properties.UVDecal_Height = UVDecal_Height;

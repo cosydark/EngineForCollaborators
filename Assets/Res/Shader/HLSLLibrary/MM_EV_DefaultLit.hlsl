@@ -207,7 +207,7 @@ void DefaultLit_float(	// PixelIn And Something
 	MColor = MInput.Base.Color;
 	MNormalTS = MInput.TangentSpaceNormal.NormalTS;
 	MMetallic = MInput.Base.Metallic;
-	MMetallic = 0;// Not A Dielectric
+	// MMetallic = 0;// Not A Dielectric
 	MAmbientOcclusion = MInput.AO.AmbientOcclusion;
 	MHeight = MInput.Detail.Height;
 	MRoughness = MInput.Base.Roughness;

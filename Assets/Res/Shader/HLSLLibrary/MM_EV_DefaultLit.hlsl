@@ -71,7 +71,7 @@ void PrepareMaterialInput_New(FPixelInput PixelIn, DefaultLitProperties Properti
     // 2U Decal
 	if(abs(Properties.Model - 1) < FLT_EPS)
 	{
-		float2 Decal_UV = saturate(PixelIn.UV1);
+		float2 Decal_UV = PixelIn.UV1;
 		float4 Decal_BaseMap = SAMPLE_TEXTURE2D(Properties.UVDecal_BaseMap, SamplerTriLinearRepeat, Decal_UV);
 		float4 Decal_EmissiveMap = SAMPLE_TEXTURE2D(Properties.UVDecal_EmissiveMap, SamplerTriLinearRepeat, Decal_UV);
 		float4 Decal_MaskMap = SAMPLE_TEXTURE2D(Properties.UVDecal_MaskMap, SamplerLinearRepeat, Decal_UV);

@@ -1,37 +1,20 @@
-#pragma enable_d3d11_debug_symbols
+// #pragma enable_d3d11_debug_symbols
 
-#pragma kernel CS_RGBASplit
-Texture2D<float4> _RGBASplit_SourceTexture;
-RWTexture2D<float4> _RGBASplit_TextureIO;
-int _RGBASplit_ChannelIndex;
+#pragma kernel CS_Initialize
+Texture2D<float4> _Initialize_SourceTexture;
+RWTexture2D<float4> _Initialize_TextureIO;
 [numthreads(16, 16, 1)]
-void CS_RGBASplit (uint3 Id : SV_DispatchThreadID)
+void CS_Initialize (uint3 Id : SV_DispatchThreadID)
 {
-    float4 TextureColor = _RGBASplit_SourceTexture[Id.xy];
-         if(_RGBASplit_ChannelIndex == 0)
-         {
-          _RGBASplit_TextureIO[Id.xy] = float4(TextureColor.r, TextureColor.r, TextureColor.r, 1);
-         }
-         if(_RGBASplit_ChannelIndex == 1)
-         {
-          _RGBASplit_TextureIO[Id.xy] = float4(TextureColor.g, TextureColor.g, TextureColor.g, 1);
-         }
-         if(_RGBASplit_ChannelIndex == 2)
-         {
-          _RGBASplit_TextureIO[Id.xy] = float4(TextureColor.b, TextureColor.b, TextureColor.b, 1);
-         }
-         if(_RGBASplit_ChannelIndex == 3)
-         {
-          _RGBASplit_TextureIO[Id.xy] = float4(TextureColor.a, TextureColor.a, TextureColor.a, 1);
-         }
+    float4 TextureColor = _Initialize_SourceTexture[Id.xy];
+    _Initialize_TextureIO[Id.xy] = TextureColor;
 }
 
+#pragma kernel CS_Measure
 struct PixelColor
 {
     float4 Color;
 };
-#pragma kernel CS_Measure
-
 Texture2D<float4> _Measure_SourceTexture;
 RWStructuredBuffer<PixelColor> _Measure_PixelColor;
 int _Measure_Resolution;
@@ -42,4 +25,14 @@ void CS_Measure (uint3 Id : SV_DispatchThreadID)
     Coordinate.x = Id.x / _Measure_Resolution;
     Coordinate.y = Id.x % _Measure_Resolution;
     _Measure_PixelColor[Id.x].Color = _Measure_SourceTexture[Coordinate];
+}
+
+#pragma kernel CS_ModifyGrayValueRange
+RWTexture2D<float4> _ModifyGrayValueRange_TextureIO;
+float4 _ModifyGrayValueRange_AverageValue;
+[numthreads(16, 16, 1)]
+void CS_ModifyGrayValueRange (uint3 Id : SV_DispatchThreadID)
+{
+    float3 ColorWithOutColor = _ModifyGrayValueRange_TextureIO[Id.xy].rgb * (0.5 / _ModifyGrayValueRange_AverageValue.xyz);
+    _ModifyGrayValueRange_TextureIO[Id.xy] = float4(ColorWithOutColor, 1);
 }

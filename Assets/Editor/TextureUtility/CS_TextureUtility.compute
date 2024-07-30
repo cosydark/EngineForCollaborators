@@ -1,0 +1,45 @@
+#pragma enable_d3d11_debug_symbols
+
+#pragma kernel CS_RGBASplit
+Texture2D<float4> _RGBASplit_SourceTexture;
+RWTexture2D<float4> _RGBASplit_TextureIO;
+int _RGBASplit_ChannelIndex;
+[numthreads(16, 16, 1)]
+void CS_RGBASplit (uint3 Id : SV_DispatchThreadID)
+{
+    float4 TextureColor = _RGBASplit_SourceTexture[Id.xy];
+         if(_RGBASplit_ChannelIndex == 0)
+         {
+          _RGBASplit_TextureIO[Id.xy] = float4(TextureColor.r, TextureColor.r, TextureColor.r, 1);
+         }
+         if(_RGBASplit_ChannelIndex == 1)
+         {
+          _RGBASplit_TextureIO[Id.xy] = float4(TextureColor.g, TextureColor.g, TextureColor.g, 1);
+         }
+         if(_RGBASplit_ChannelIndex == 2)
+         {
+          _RGBASplit_TextureIO[Id.xy] = float4(TextureColor.b, TextureColor.b, TextureColor.b, 1);
+         }
+         if(_RGBASplit_ChannelIndex == 3)
+         {
+          _RGBASplit_TextureIO[Id.xy] = float4(TextureColor.a, TextureColor.a, TextureColor.a, 1);
+         }
+}
+
+struct PixelColor
+{
+    float4 Color;
+};
+#pragma kernel CS_Measure
+
+Texture2D<float4> _Measure_SourceTexture;
+RWStructuredBuffer<PixelColor> _Measure_PixelColor;
+int _Measure_Resolution;
+[numthreads(1024, 1, 1)]
+void CS_Measure (uint3 Id : SV_DispatchThreadID)
+{
+    uint2 Coordinate;
+    Coordinate.x = Id.x / _Measure_Resolution;
+    Coordinate.y = Id.x % _Measure_Resolution;
+    _Measure_PixelColor[Id.x].Color = _Measure_SourceTexture[Coordinate];
+}

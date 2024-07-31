@@ -1,0 +1,39 @@
+{
+  "path": "$PackagesDir/WX_HoudiniPackage",
+
+  "env": 
+  [
+    {"WXOTLS": "$PackagesDir/WX_HoudiniPackage/otls"},
+
+    {
+      "HOUDINI_OTLSCAN_PATH": 
+      {
+        "value": 
+        [
+          "",
+          "$WXOTLS/PCG_Building",
+          "$WXOTLS/PCG_Foliage",
+          "$WXOTLS/PCG_River",
+          "$WXOTLS/PCG_Road",
+          "$WXOTLS/Terrain",
+          "$WXOTLS/Cliff",
+          "$WXOTLS/Toolkit",
+          "$WXOTLS/Pipeline",
+          "$WXOTLS/Legacy",
+          "$WXOTLS/Ark_Tools"
+        ],
+        "method": "append"
+      }
+    },
+
+    {
+      "PYTHONPATH": 
+      {
+        "value": "$PackagesDir/WX_HoudiniPackage/scripts",
+        "method": "append"
+      }
+    }
+  ]
+}
+
+

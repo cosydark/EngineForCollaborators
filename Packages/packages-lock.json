@@ -1,5 +1,35 @@
 {
   "dependencies": {
+    "com.autodesk.fbx": {
+      "version": "file:com.autodesk.fbx@5.1.0-pre.1",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.funplus.worldx.pcg-flow": {
+      "version": "file:com.funplus.worldx.pcg-flow",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.funplus.worldx.prefab-creator": {
+      "version": "file:com.funplus.worldx.prefab-creator",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.funplus.worldx.world-partition": {
+      "version": "file:com.funplus.worldx.world-partition",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.sidefx.houdiniengineforunity": {
+      "version": "file:HoudiniEngineUnity",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.burst": {
       "version": "1.8.13",
       "depth": 1,

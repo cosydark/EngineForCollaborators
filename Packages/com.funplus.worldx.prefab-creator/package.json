@@ -1,0 +1,12 @@
+{
+  "name": "com.funplus.worldx.prefab-creator",
+  "description": "WorldX Tool TO Create Prefabs",
+  "version": "2.0.0",
+  "unity": "2022.3",
+  "unityRelease": "24f1",
+  "displayName": "Prefab Creator",
+  "keywords": ["editor"],
+  "author": {
+    "name": "WorldX TA Group"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "presets": {
+    "SmallProp": {
+      "LOD": {
+        "lodPara": {
+          "$type": "Editor.PrefabCreator.Module.LODGenParameter, Funplus.WorldX.PrefabCreator.Editor",
+          "maskWeight": 0.0,
+          "normalWeight": 0.0,
+          "uvWeight": 0.0,
+          "edgeWeight": 0.0,
+          "LODCount": 2,
+          "factor": 0.15
+        }
+      },
+      "Collider": {
+        "generateTempCollider": true
+      },
+      "Settings": {
+        "freezeTransform": true,
+        "addWorldPartitionObject": true,
+        "multiEditingLayer": 5
+      }
+    },
+    "Simple": {
+      "LOD": {
+        "lodPara": {
+          "$type": "Editor.PrefabCreator.Module.LODGenParameter, Funplus.WorldX.PrefabCreator.Editor",
+          "maskWeight": 0.0,
+          "normalWeight": 0.0,
+          "uvWeight": 0.0,
+          "edgeWeight": 0.0,
+          "LODCount": 3,
+          "factor": 1.2
+        }
+      },
+      "Collider": {
+        "generateTempCollider": true
+      },
+      "Settings": {
+        "freezeTransform": true,
+        "addWorldPartitionObject": true,
+        "multiEditingLayer": 5
+      }
+    },
+    "Custom": {
+      "LOD": {
+        "lodPara": {
+          "$type": "Editor.PrefabCreator.Module.LODGenParameter, Funplus.WorldX.PrefabCreator.Editor",
+          "maskWeight": 0.0,
+          "normalWeight": 0.0,
+          "uvWeight": 0.0,
+          "edgeWeight": 0.0,
+          "LODCount": 4,
+          "factor": 1
+        }
+      },
+      "Collider": {
+        "generateTempCollider": true
+      },
+      "Settings": {
+        "freezeTransform": true,
+        "addWorldPartitionObject": false,
+        "multiEditingLayer": 10
+      }
+    },
+    "Complex": {
+      "LOD": {
+        "lodPara": {
+          "$type": "Editor.PrefabCreator.Module.LODGenParameter, Funplus.WorldX.PrefabCreator.Editor",
+          "maskWeight": 0.0,
+          "normalWeight": 0.0,  
+          "uvWeight": 0.0,
+          "edgeWeight": 0.0,
+          "LODCount": 6,
+          "factor": 0.8
+        }
+      },
+      "Collider": {
+        "generateTempCollider": true
+      },
+      "Settings": {
+        "freezeTransform": true,
+        "addWorldPartitionObject": false,
+        "multiEditingLayer": 10
+      }
+    }
+  },
+  "SavePath": "Packages/com.funplus.worldx.prefab-creator/Editor/PrefabCreator/ModulesPreset.json"
+}

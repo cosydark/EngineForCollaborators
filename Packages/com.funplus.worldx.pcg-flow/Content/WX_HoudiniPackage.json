@@ -1,0 +1,18 @@
+{
+  "env" : 
+  [
+    {
+      "PackagesDir": "C:/WX_PCG/Content"
+    }
+  ],
+
+  "package_path": 
+  [
+    "$PackagesDir/WX_HoudiniPackage"
+  ]
+}
+
+
+
+
+

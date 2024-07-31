@@ -1,0 +1,8 @@
+{
+  "name": "com.sidefx.houdiniengineforunity",
+  "version": "19.5.682",
+  "displayName": "Houdini Engine",
+  "unity": "2019.1",
+  "description": "Houdini Engine",
+  "dependencies": {}
+}

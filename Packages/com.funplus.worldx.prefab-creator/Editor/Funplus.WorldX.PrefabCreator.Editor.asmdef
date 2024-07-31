@@ -1,0 +1,41 @@
+{
+    "name": "Funplus.WorldX.PrefabCreator.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:343deaaf83e0cee4ca978e7df0b80d21",
+        "GUID:2bafac87e7f4b9b418d9448d219b01ab",
+        "GUID:df380645f10b7bc4b97d4f5eb6303d95",
+        "GUID:a1a7cacb6cec073439a2b2c1849d773b",
+        "GUID:2b82e46c4ca0a4eb697ab8ccdfb39af1",
+        "GUID:ad318b1a7ea5a6f4aa9b396904ece70f",
+        "GUID:04e0b7c95bbda6a4499dc57196ee4b8e",
+        "GUID:9e3c273b93f3db44fa1765639ca5386a",
+        "GUID:2e547bd6f8a19ba49b452f98af61e722",
+        "GUID:cb942221e8285844084f6395e285a908",
+        "GUID:cf985979efc087043ad88a879cabaf66",
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:27619889b8ba8c24980f49ee34dbb44a"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.funplus.worldx.ta-tools",
+            "expression": "",
+            "define": "TA_TOOLS"
+        },
+        {
+            "name": "com.funplus.xrender",
+            "expression": "",
+            "define": "XRENDER"
+        }
+    ],
+    "noEngineReferences": false
+}
